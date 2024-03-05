@@ -22,8 +22,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="w-1/2 h-56 sm:h-64 xl:h-80 2xl:h-96">
-        <Carousel slide={false}>
+      <div className="w-1/2 mx-auto h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <Carousel slide={false} indicators={false}>
           <Image
             width={50}
             height={50}
@@ -57,5 +57,6 @@ export default function Home() {
         </Carousel>
       </div>
     </div>
+    
   );
 }

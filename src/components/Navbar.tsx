@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image
-            src="/ieee_logo_icon_no_text169993.png"
+            src="/images/ieee_logo_icon_no_text169993.png"
             height={50}
             alt="IEEE Logo"
             width={60}
