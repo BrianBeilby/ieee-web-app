@@ -20,10 +20,6 @@ export default function Events() {
 
   return (
     <div className="container my-24 mx-auto md:px-6">
-      <div
-        className="block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 backdrop-blur-[30px]
-      bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-gray-900 dark:to-transparent"
-      >
         <h1 className="text-center text-4xl font-bold mb-8 text-white">
           Upcoming Events
         </h1>
@@ -31,11 +27,11 @@ export default function Events() {
           <iframe
             src="https://outlook.office365.com/owa/calendar/1c470c05022745f382e100df46570c61@csus.edu/0d8046b2c9ac438db7419638d2f167cb8821207429198934719/calendar.html"
             style={{ border: 0 }}
-            width="100%"
+            width="80%"
             height="600"
             className="mx-auto"
           ></iframe>
-          <div className="self-end mt-4">
+          <div className="mt-4">
             <Button
               outline
               gradientDuoTone="purpleToBlue"
@@ -114,7 +110,6 @@ export default function Events() {
             </div>
           </Modal.Body>
         </Modal>
-      </div>
     </div>
   );
 }
