@@ -19,24 +19,26 @@ export default function Events() {
   };
 
   return (
-    <div className="container my-24 mx-auto md:px-6">
-        <h1 className="text-center text-4xl font-bold mb-8 text-white">
+    <div className="container mx-auto px-4 py-12 md:py-24">
+        <h1 className="text-center text-3xl md:text-4xl font-bold mb-8 text-white">
           Upcoming Events
         </h1>
         <div className="flex flex-col items-center">
+        <div className="w-full max-w-6xl mx-auto">
           <iframe
             src="https://outlook.office365.com/owa/calendar/1c470c05022745f382e100df46570c61@csus.edu/0d8046b2c9ac438db7419638d2f167cb8821207429198934719/calendar.html"
             style={{ border: 0 }}
-            width="80%"
+            width="100%"
             height="600"
-            className="mx-auto"
+            className="mx-auto rounded-lg shadow-lg"
           ></iframe>
-          <div className="mt-4">
+        </div>
+          <div className="mt-8">
             <Button
               outline
               gradientDuoTone="purpleToBlue"
               size="lg"
-              className="mx-auto mt-4"
+              className="mx-auto"
               onClick={() => setOpenModal(true)}
             >
               Subscribe
