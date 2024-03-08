@@ -1,17 +1,21 @@
 import Image from "next/image";
 import { Carousel } from "flowbite-react";
+import { Spotlight } from "@/components/Spotlight";
+import { TextGenerateEffect } from "@/components/TextGenerateEffect";
 
 export default function Home() {
   return (
     <div className="container my-24 mx-auto md:px-6">
       <section className="bg-center bg-no-repeat bg-transparent bg-blend-multiply">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-20">
+          <Spotlight
+            className="-top-40 left-10 md:left-60 md:-top-1/4"
+            fill="white"
+          />
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Sacramento State IEEE
           </h1>
-          <p className="mb-8 text-xl font-normal text-gray-300 lg:text-2xl sm:px-16 lg:px-48">
-            Advancing Technology for Humanity
-          </p>
+          <TextGenerateEffect className="mb-4" words={"Advancing Technology For Humanity"} />
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
               href="/about"
@@ -57,6 +61,5 @@ export default function Home() {
         </Carousel>
       </div>
     </div>
-    
   );
 }
