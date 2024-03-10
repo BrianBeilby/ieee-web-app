@@ -1,4 +1,5 @@
 "use client";
+import { BackgroundBeams } from "@/components/BackgroundBeams";
 import { useState } from "react";
 
 export default function Contact() {
@@ -58,7 +59,7 @@ export default function Contact() {
         <div className="container px-6 md:px-12">
           <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[450px] md:-mt-[350px] sm:-mt-[250px] xs:-mt-[150px] backdrop-blur-[30px]">
             <div className="flex flex-wrap">
-              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+              <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6 z-10">
                 <form onSubmit={handleSubmit}>
                   <div className="relative mb-6">
                     <input
@@ -150,7 +151,7 @@ export default function Contact() {
                   )}
                 </form>
               </div>
-              <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 flex justify-center items-center">
+              <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 flex justify-center items-center z-10">
                 <div className="flex flex-wrap justify-center">
                   <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
                     <div className="flex flex-col items-center justify-center w-full">
@@ -188,6 +189,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
+            <BackgroundBeams />
           </div>
         </div>
       </section>
