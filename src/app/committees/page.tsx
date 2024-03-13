@@ -65,7 +65,7 @@ export default function Committees() {
                       </div>
                     </div>
                     <div className="p-4 flex-grow">
-                      <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                      <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center break-words w-full px-2">
                         {member.name}
                       </h3>
                       <span className="text-gray-500 dark:text-gray-400">
@@ -84,6 +84,7 @@ export default function Committees() {
                                   href={url}
                                   className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
                                   style={{ color: color }}
+                                  target="_blank"
                                 >
                                   <Icon className="w-5 h-5" />
                                 </a>
@@ -109,53 +110,41 @@ const sections = [
     name: "Executives",
     members: [
       {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
+        name: "Pasquale De Luca",
+        role: "President",
+        img: "/images/pasquale.jpg",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
+          linkedin: "https://www.linkedin.com/in/pasquale-de-luca-ab5355256/",
           // Add more social links as needed
         },
       },
       {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
+        name: "Joshua De Gruccio",
+        role: "Treasurer",
+        img: "/images/josh.jpg",
         socials: {
           twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/joshua-de-gruccio-5461272b6/",
           // Add more social links as needed
         },
       },
       {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
+        name: "Jayden Matt",
+        role: "Vice President",
+        img: "/images/jayden.jpg",
         socials: {
           twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/jayden-matt-b6b032265/",
           // Add more social links as needed
         },
       },
       {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
+        name: "Slav Kolesnikovich",
+        role: "Secretary/Social Manager",
+        img: "/images/slavik.jpg",
         socials: {
           twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/slavkoles/",
           // Add more social links as needed
         },
       },
@@ -264,6 +253,42 @@ const sections = [
           twitter: "https://twitter.com/bonniegreen",
           linkedin: "https://linkedin.com/in/bonniegreen",
           github: "https://github.com/BrianBeilby",
+          // Add more social links as needed
+        },
+      },
+      // Define members similar to above
+    ],
+  },
+  {
+    name: "Website and IT",
+    members: [
+      {
+        name: "Brian Beilby",
+        role: "Chair",
+        img: "/images/ProHeadshot1.png",
+        socials: {
+          twitter: "https://twitter.com/bonniegreen",
+          linkedin: "https://linkedin.com/in/bonniegreen",
+          // Add more social links as needed
+        },
+      },
+      {
+        name: "Michael Mehrdadi",
+        role: "Chair",
+        img: "/images/mike.jpg",
+        socials: {
+          twitter: "https://twitter.com/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/michael-mehrdadi-342191272/",
+          // Add more social links as needed
+        },
+      },
+      {
+        name: "Brian Beilby",
+        role: "Chair",
+        img: "/images/ProHeadshot1.png",
+        socials: {
+          twitter: "https://twitter.com/bonniegreen",
+          linkedin: "https://linkedin.com/in/bonniegreen",
           // Add more social links as needed
         },
       },
