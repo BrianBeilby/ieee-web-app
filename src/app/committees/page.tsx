@@ -6,6 +6,8 @@ import Image from "next/image";
 import { IconType } from "react-icons";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { BackgroundBeams } from "@/components/BackgroundBeams";
+import { TracingBeam } from "@/components/TracingBeam";
+import { Meteors } from "@/components/Meteors";
 
 interface SocialIconDetails {
   icon: IconType;
@@ -40,18 +42,23 @@ const socialIcons: SocialIcons = {
 export default function Committees() {
   return (
     <div className="container my-24 mx-auto md:px-6">
-      <section className="bg-white dark:bg-gray-900 rounded-lg backdrop-blur-[30px]">
-        <div className="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
+      
+      <section className="bg-transparent rounded-lg">
+        <div className="py-4 px-1 mx-auto max-w-screen-xl lg:py-8 lg:px-2">
           {sections.map((section) => (
             <div key={section.name}>
               <h3 className="text-4xl font-bold text-gray-900 dark:text-white text-center my-10">
                 {section.name}
               </h3>
-              <div className="flex justify-center items-start flex-wrap mb-6 lg:mb-16">
+              <div className="flex flex-wrap justify-center gap-4">
                 {section.members.map((member, index) => (
                   <div
                     key={index}
-                    className="flex flex-wrap items-center bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-4 mb-4 overflow-hidden"
+                    className="flex flex-col bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-4 overflow-hidden"
+                    style={{
+                      minWidth: "250px",
+                      maxWidth: "calc(100% / 5 - 1rem)",
+                    }}
                   >
                     <div className="flex flex-col items-center p-4">
                       <div className="relative w-32 h-32 flex-none overflow-hidden rounded-full">
@@ -59,40 +66,45 @@ export default function Committees() {
                           className="rounded-t-lg"
                           src={member.img}
                           alt={`${member.name} Avatar`}
-                          layout="fill"
-                          objectFit="cover"
+                          fill
+                          style={{ objectFit: "cover" }}
                         />
                       </div>
                     </div>
-                    <div className="p-4 flex-grow">
-                      <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white text-center break-words w-full px-2">
-                        {member.name}
-                      </h3>
-                      <span className="text-gray-500 dark:text-gray-400">
-                        {member.role}
-                      </span>
-                      <ul className="flex flex-wrap justify-start space-x-1 mt-3">
-                        {Object.entries(member.socials).map(
-                          ([platform, url]) => {
-                            const IconDetail =
-                              socialIcons[platform.toLowerCase()];
-                            if (!IconDetail) return null;
-                            const { icon: Icon, color } = IconDetail;
-                            return (
-                              <li key={platform}>
-                                <a
-                                  href={url}
-                                  className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                                  style={{ color: color }}
-                                  target="_blank"
-                                >
-                                  <Icon className="w-5 h-5" />
-                                </a>
-                              </li>
-                            );
-                          }
-                        )}
-                      </ul>
+                    <div className="p-4 flex-grow flex flex-col text-center">
+                      <div>
+                        <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                          {member.name}
+                        </h3>
+                        <div className="mt-auto">
+                          <span className="text-gray-500 dark:text-gray-400">
+                            {member.role}
+                          </span>
+                        </div>
+
+                        <ul className="flex flex-wrap justify-center space-x-1 mt-2">
+                          {Object.entries(member.socials).map(
+                            ([platform, url]) => {
+                              const IconDetail =
+                                socialIcons[platform.toLowerCase()];
+                              if (!IconDetail) return null;
+                              const { icon: Icon, color } = IconDetail;
+                              return (
+                                <li key={platform}>
+                                  <a
+                                    href={url}
+                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                                    style={{ color: color }}
+                                    target="_blank"
+                                  >
+                                    <Icon className="w-5 h-5" />
+                                  </a>
+                                </li>
+                              );
+                            }
+                          )}
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -108,6 +120,7 @@ export default function Committees() {
 const sections = [
   {
     name: "Executives",
+    description: "The executive team is responsible for the overall management of the club. They are responsible for the club's operations, finances, and strategic direction.",
     members: [
       {
         name: "Pasquale De Luca",
@@ -153,6 +166,7 @@ const sections = [
   },
   {
     name: "Activities",
+    description: "The activities team is responsible for planning and executing events for the club. They are responsible for the club's events, workshops, and socials.",
     members: [
       {
         name: "Brian Beilby",
@@ -189,6 +203,7 @@ const sections = [
   },
   {
     name: "Marketing",
+    description: "The marketing team is responsible for promoting the club and its events. They are responsible for the club's social media, website, and branding.",
     members: [
       {
         name: "Brian Beilby",
@@ -261,6 +276,7 @@ const sections = [
   },
   {
     name: "Website and IT",
+    description: "The website and IT team is responsible for maintaining the club's website and other IT related tasks. They are responsible for the club's website, email, and other IT related tasks.",
     members: [
       {
         name: "Brian Beilby",
