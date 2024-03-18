@@ -179,11 +179,11 @@ const sections = [
         },
       },
       {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
+        name: "John Shifftler",
+        role: "Member",
+        img: "/images/dfsdfsfsdfs.png",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
+          twitter: "https://twitter.com/Cobratate",
           linkedin: "https://linkedin.com/in/bonniegreen",
           // Add more social links as needed
         },
