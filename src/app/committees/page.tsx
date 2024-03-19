@@ -1,13 +1,7 @@
 "use client";
-import { HoverEffect } from "@/components/HoverEffect";
-import { Boxes } from "@/components/BackgroundBoxes";
-import { cn } from "@/utils/cn";
 import Image from "next/image";
 import { IconType } from "react-icons";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
-import { BackgroundBeams } from "@/components/BackgroundBeams";
-import { TracingBeam } from "@/components/TracingBeam";
-import { Meteors } from "@/components/Meteors";
 
 interface SocialIconDetails {
   icon: IconType;
@@ -42,7 +36,6 @@ const socialIcons: SocialIcons = {
 export default function Committees() {
   return (
     <div className="container my-24 mx-auto md:px-6">
-      
       <section className="bg-transparent rounded-lg">
         <div className="py-4 px-1 mx-auto max-w-screen-xl lg:py-8 lg:px-2">
           {sections.map((section) => (
@@ -120,7 +113,8 @@ export default function Committees() {
 const sections = [
   {
     name: "Executives",
-    description: "The executive team is responsible for the overall management of the club. They are responsible for the club's operations, finances, and strategic direction.",
+    description:
+      "The executive team is responsible for the overall management of the club. They are responsible for the club's operations, finances, and strategic direction.",
     members: [
       {
         name: "Pasquale De Luca",
@@ -166,7 +160,8 @@ const sections = [
   },
   {
     name: "Activities",
-    description: "The activities team is responsible for planning and executing events for the club. They are responsible for the club's events, workshops, and socials.",
+    description:
+      "The activities team is responsible for planning and executing events for the club. They are responsible for the club's events, workshops, and socials.",
     members: [
       {
         name: "Brian Beilby",
@@ -203,7 +198,8 @@ const sections = [
   },
   {
     name: "Marketing",
-    description: "The marketing team is responsible for promoting the club and its events. They are responsible for the club's social media, website, and branding.",
+    description:
+      "The marketing team is responsible for promoting the club and its events. They are responsible for the club's social media, website, and branding.",
     members: [
       {
         name: "Brian Beilby",
@@ -276,7 +272,8 @@ const sections = [
   },
   {
     name: "Website and IT",
-    description: "The website and IT team is responsible for maintaining the club's website and other IT related tasks. They are responsible for the club's website, email, and other IT related tasks.",
+    description:
+      "The website and IT team is responsible for maintaining the club's website and other IT related tasks. They are responsible for the club's website, email, and other IT related tasks.",
     members: [
       {
         name: "Brian Beilby",

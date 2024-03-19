@@ -1,11 +1,12 @@
 "use client";
-
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import SectionDivider from "@/components/section-divider";
 import OutlinedCard from '@/components/Card'; 
+import Image from 'next/image';
+
 
 const scrollToTwentyPercent = () => {
   const windowHeight = window.innerHeight;
@@ -39,15 +40,14 @@ export default function About() {
               type: "tween",
               duration: 0.2,
             }}
-            className="container mx-auto px-4 text-center">
-
+            className="container mx-auto px-4 text-center"
+          >
             <div className=" py-4">
               <h1 className="text-5xl font-extrabold tracking-tight leading-none text-white md:text-6xl lg:text-7xl">
                 About Us
               </h1>
             </div>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -57,7 +57,8 @@ export default function About() {
               delay: 0.1,
               duration: 0.5,
             }}
-            className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-35">
+            className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-35"
+          >
             <p className="text-lg md:text-xl text-white">
               Welcome to the Electrical Engineering Club at Sacramento State!
               Established in 2024, the Electrical Engineering Club has been a
@@ -67,7 +68,6 @@ export default function About() {
               field of electrical engineering.
             </p>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -77,7 +77,8 @@ export default function About() {
               delay: 0.1,
               duration: 0.7,
             }}
-            className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30">
+            className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
+          >
             <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
               Furthermore
             </h2>
@@ -90,7 +91,6 @@ export default function About() {
               professionals.
             </p>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -145,26 +145,29 @@ export default function About() {
                 </li>
               </ul>
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.175,
               }}
-              className="container mx-auto px-6 text-lg md:text-xl text-white mb-10 max-w-[45rem] text-center leading-8 sm:mb-10">
-
+              className="container mx-auto px-6 text-lg md:text-xl text-white mb-10 max-w-[45rem] text-center leading-8 sm:mb-10"
+            >
               <div className="flex items-center ">
                 <div className="relative w-full max-w-md">
                   <div className="relative">
-                    <img src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg" alt="Your image" className="w-full rounded-lg " />
-                    
+                    <Image
+                      width={733}
+                      height={412}
+                      src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
+                      className="w-full rounded-lg" alt={""} />
+
                     <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
-                    
+
                     <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
                   </div>
                 </div>
-                
+
                 <div className="ml-6">
                   <p> Look at all the fun our members have </p>
                 </div>
@@ -181,14 +184,13 @@ export default function About() {
                 explore the fascinating world of electrical engineering and make
                 a positive impact on the future of technology!
               </p>
-
             </motion.div>
-
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="">
+              className=""
+            >
               <SectionDivider />
             </motion.div>
 
