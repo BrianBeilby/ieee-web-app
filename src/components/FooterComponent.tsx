@@ -36,7 +36,7 @@ export default function FooterComponent() {
               <Footer.Copyright by="Sacramento State IEEE" year={2024} className="text-xs md:text-md lg:text-xl"/>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+          <div className="grid grid-cols-2 gap-8 mt-6 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
               <Footer.Title title="Links" />
               <Footer.LinkGroup col>
