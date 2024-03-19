@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <><meta name="viewport" content="width=device-width, initial-scale=1.0" /><html lang="en">
       <head>
         <ThemeModeScript />
       </head>
@@ -26,6 +26,6 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <FooterComponent />
       </body>
-    </html>
+    </html></>
   );
 }
