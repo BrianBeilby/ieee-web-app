@@ -8,7 +8,7 @@ export default function Events() {
   const [openModal, setOpenModal] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
   const icsLink =
-    "https://outlook.office365.com/owa/calendar/1c470c05022745f382e100df46570c61@csus.edu/0d8046b2c9ac438db7419638d2f167cb8821207429198934719/calendar.ics";
+    "https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/26e86ea4-d215-49fa-8662-9284e5d13e05/cid-637F1134BABD7C29/calendar.ics";
 
   const copyLinkToClipboard = async () => {
     await navigator.clipboard.writeText(icsLink);
@@ -26,7 +26,7 @@ export default function Events() {
       <div className="flex flex-col items-center">
         <div className="w-full max-w-6xl mx-auto">
           <iframe
-            src="https://outlook.office365.com/owa/calendar/1c470c05022745f382e100df46570c61@csus.edu/0d8046b2c9ac438db7419638d2f167cb8821207429198934719/calendar.html"
+            src="https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/26e86ea4-d215-49fa-8662-9284e5d13e05/cid-637F1134BABD7C29/index.html"
             style={{ border: 0 }}
             width="100%"
             height="600"
