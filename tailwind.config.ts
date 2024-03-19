@@ -63,6 +63,15 @@ const config: Config = {
           700: "#014755",
           800: "#012E2D",
           900: "#001506",
+          black: '#333333',
+          blue: '#334982',
+          grey: '#f3f3f3',
+          orange: '#fdb913',
+          pink: '#e40087',
+          purple: '#782b8f',
+          red: '#dd372f',
+          teal: '#00857d',
+          white: '#fff',
         },
         secondary: {
           50: "#E5E5E6",
@@ -80,6 +89,7 @@ const config: Config = {
       },
     },
   },
+
   plugins: [require("tw-elements/dist/plugin.cjs"), addVariablesForColors],
 };
 
