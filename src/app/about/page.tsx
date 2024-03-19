@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import SectionDivider from "@/components/section-divider";
 import OutlinedCard from '@/components/Card'; 
+import Image from "next/image";
 
 
 export default function About() {
@@ -142,7 +143,7 @@ export default function About() {
               <div className="flex items-center ">
                 <div className="relative w-full max-w-md">
                   <div className="relative">
-                    <img src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg" alt="Your image" className="w-full rounded-lg " />
+                    <Image width={733} height={412} src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg" alt="Your image" className="w-full rounded-lg" />
                     
                     <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
                     
@@ -207,7 +208,7 @@ export default function About() {
                     <div className="h-full">
                       <article className="h-full">
                         <div className="h-full">
-                          <img className="h-full object-cover" src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg" width="733" height="412" alt='""' typeof="foaf:Image" />
+                          <Image className="h-full object-cover" src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg" width={733} height={412} alt='""' typeof="foaf:Image" />
                         </div>
                       </article>
                     </div>
