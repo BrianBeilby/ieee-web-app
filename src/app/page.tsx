@@ -33,40 +33,40 @@ export default function Home() {
         <Carousel slide={false} indicators={true}>
           <div className="relative w-full h-full">
             <Image
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
               alt="..."
             />
           </div>
           <div className="relative w-full h-full">
             <Image
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
               alt="..."
             />
           </div>
           <div className="relative w-full h-full">
             <Image
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
               alt="..."
             />
           </div>
           <div className="relative w-full h-full">
             <Image
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
               alt="..."
             />
           </div>
           <div className="relative w-full h-full">
             <Image
-              layout="fill"
-              objectFit="cover"
+              fill
+              style={{ objectFit: "cover" }}
               src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
               alt="..."
             />

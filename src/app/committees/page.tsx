@@ -39,8 +39,8 @@ export default function Committees() {
       <section className="bg-transparent rounded-lg">
         <div className="py-4 px-1 mx-auto max-w-screen-xl lg:py-8 lg:px-2">
           {sections.map((section) => (
-            <div key={section.name}>
-              <h3 className="text-4xl font-bold text-gray-900 dark:text-white text-center my-10">
+            <div key={section.name} className="mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-10">
                 {section.name}
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
