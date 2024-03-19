@@ -26,13 +26,14 @@ export default function FooterComponent() {
               alt="IEEE Logo"
               width={50}
               height={50}
+              className="w-10 h-10 md:w-12 md:h-12"
             />
             <div className="flex flex-col items-start">
-              <p className="mt-2 text-white text-2xl">IEEE PES Club</p>
-              <p className="mt-2 text-white text-lg">
+              <p className="text-sm text-white md:text-lg lg:text-2xl">IEEE PES Club</p>
+              <p className="text-xs text-white md:text-md lg:text-xl">
                 California State University, Sacramento
               </p>
-              <Footer.Copyright by="Sacramento State IEEE" year={2024} />
+              <Footer.Copyright by="Sacramento State IEEE" year={2024} className="text-xs md:text-md lg:text-xl"/>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
