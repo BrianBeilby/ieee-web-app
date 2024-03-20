@@ -3,6 +3,11 @@ import { Button, Modal, Tooltip } from "flowbite-react";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CheckIcon } from "@heroicons/react/outline";
 import { useState } from "react";
+import SectionDivider from "@/components/section-divider";
+import { projectsData } from "@/app/events/eventData";
+import React from "react";
+import Project from "./event";
+
 
 export default function Events() {
   const [openModal, setOpenModal] = useState(false);
@@ -48,8 +53,7 @@ export default function Events() {
       <Modal
         theme={{
           content: {
-            inner:
-              "relative rounded-lg bg-white shadow dark:bg-gray-900 flex flex-col max-h-[90vh]",
+            inner: "relative rounded-lg bg-white shadow dark:bg-gray-900 flex flex-col max-h-[90vh]",
           },
         }}
         dismissible
@@ -75,8 +79,7 @@ export default function Events() {
                   value={icsLink}
                   readOnly
                   disabled
-                  className="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg block w-full p-2.5 pr-12 cursor-default"
-                />
+                  className="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg block w-full p-2.5 pr-12 cursor-default" />
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                   <Tooltip
                     content={copySuccess ? "Copied!" : "Copy to clipboard"}
@@ -84,9 +87,7 @@ export default function Events() {
                   >
                     <button
                       onClick={copyLinkToClipboard}
-                      className={`text-gray-500 hover:bg-gray-100 rounded-lg p-2 ${
-                        copySuccess ? "bg-gray-200" : ""
-                      }`}
+                      className={`text-gray-500 hover:bg-gray-100 rounded-lg p-2 ${copySuccess ? "bg-gray-200" : ""}`}
                     >
                       {copySuccess ? (
                         <CheckIcon className="w-4 h-4 text-blue-500" />
@@ -112,6 +113,24 @@ export default function Events() {
           </div>
         </Modal.Body>
       </Modal>
+
+      <div className="flex flex-col items-center justify-center"> {/* Start of events */}
+
+      <SectionDivider />     
+
+      <h2 className="text-3xl capitalize text-center text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8" > Events </h2>
+
+      <div>
+        {projectsData && projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
+        ))}
+      </div>
+      </div> {/* End of events */}
+                 
     </div>
+
   );
 }
+
