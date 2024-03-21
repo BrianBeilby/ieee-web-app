@@ -223,40 +223,32 @@ export default function About() {
                         <div className="h-full">
                           <article className="h-full">
                             <div className="h-full">
-                              <Image
-                                src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
-                                alt="BMW E30 Event"
-                                typeof="foaf:Image"
-                                className="h-full object-cover"
-                                width={733}
-                                height={412}
-                              />
+                              <div className="relative">
+                                <Image
+                                  width={600}
+                                  height={350}
+                                  src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
+                                  className="h-full object-cover" alt={""} />
+                                <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
+                                <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
+                              </div>
                             </div>
                           </article>
                         </div>
                       </div>
-                      <div className="p-6 bg-grey">
+                      <div className="p-2 bg-grey">
                         <div className="leading-relaxed">
-                          <h2 className="leading-tight text-4xl font-bold">
-                            IEEE: BMW E30 Event
-                          </h2>
+                          <h2 className="leading-tight text-4xl font-bold">IEEE: Event</h2>
                           <p className="mt-4">
-                            Our club is a host of a variety of action packed
-                            events&nbsp;brought together by a brilliant S52
-                            motor in the generous yet all humble E30 chassis the
-                            development of this monster is on display...
+                          Join us for our upcoming event at the Sacramento State Well, where we&aposll dive into the exciting world of Electronic Engineering.&nbsp;Whether you&aposre a seasoned enthusiast or simply curious about the field, everyone is invited to join us in exploring the latest advancements in electronic technology.
                           </p>
                           <p className="mt-4">
-                            Our second next event is being hosted at the
-                            Sacramento State Well &nbsp; Where anyone is welcome
-                            to come do some anabolic lifts, Explore all of our
-                            upcoming events at our events page linked below.
+                          This event is a fantastic opportunity to learn alongside fellow students and industry experts, gaining valuable insights and expanding your understanding of electronic engineering.  &nbsp; Be sure to visit our events page linked below for more information on this event and other upcoming opportunities
                           </p>
                           <p>
                             <Link
                               href="/events"
-                              className="mt-4 group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
-                            >
+                              className="mt-6 group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition" >
                               Explore Events{" "}
                               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                             </Link>
