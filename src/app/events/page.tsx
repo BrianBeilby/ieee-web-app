@@ -87,7 +87,7 @@ export default function Events() {
                   >
                     <button
                       onClick={copyLinkToClipboard}
-                      className={`text-gray-500 hover:bg-gray-100 rounded-lg p-2 ${copySuccess ? "bg-gray-200" : ""}`}
+                      className={`text-gray-800 hover:bg-gray-100 rounded-lg p-2 ${copySuccess ? "bg-gray-200" : ""}`}
                     >
                       {copySuccess ? (
                         <CheckIcon className="w-4 h-4 text-blue-500" />
