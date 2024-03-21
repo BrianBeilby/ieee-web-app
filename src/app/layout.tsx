@@ -17,15 +17,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <><meta name="viewport" content="width=device-width, initial-scale=1.0" /><html lang="en">
-      <head>
-        <ThemeModeScript />
-      </head>
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <Navbar />
-        <main className="flex-grow">{children}</main>
-        <FooterComponent />
-      </body>
-    </html></>
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <html lang="en">
+        <head>
+          <ThemeModeScript />
+        </head>
+        <body className={`${inter.className} flex flex-col min-h-screen`}>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <FooterComponent />
+        </body>
+      </html>
+    </>
   );
 }
