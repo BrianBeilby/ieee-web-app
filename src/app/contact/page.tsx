@@ -192,7 +192,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-1"/>
+            <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-1 max-sm:hidden"/>
           </div>
         </div>
       </section>
