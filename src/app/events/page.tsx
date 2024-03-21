@@ -4,9 +4,9 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { CheckIcon } from "@heroicons/react/outline";
 import { useState } from "react";
 import SectionDivider from "@/components/section-divider";
-import { projectsData } from "@/app/events/eventData";
+import { eventsData } from "@/app/events/eventData";
 import React from "react";
-import Project from "./event";
+import Event from "./event";
 
 
 export default function Events() {
@@ -115,18 +115,15 @@ export default function Events() {
       </Modal>
 
       <div className="flex flex-col items-center justify-center"> {/* Start of events */}
-
-      <SectionDivider />     
-
-      <h2 className="text-3xl capitalize text-center text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8" > Events </h2>
-
-      <div>
-        {projectsData && projectsData.map((project, index) => (
-          <React.Fragment key={index}>
-            <Project {...project} />
-          </React.Fragment>
-        ))}
-      </div>
+        <SectionDivider />     
+        <h2 className="text-3xl capitalize text-center text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8" > Events </h2>
+        <div>
+          {eventsData && eventsData.map((event, index) => (
+            <React.Fragment key={index}>
+              <Event {...event} />
+            </React.Fragment>
+          ))}
+        </div>
       </div> {/* End of events */}
                  
     </div>

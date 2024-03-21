@@ -1,5 +1,5 @@
 
-export const projectsData = [
+export const eventsData = [  //Use this to add events in Events Page 
     {
       title: "PowerGrid",
       description: "Power distribution and monitoring system for smart cities. Real-time analytics and fault detection.",
