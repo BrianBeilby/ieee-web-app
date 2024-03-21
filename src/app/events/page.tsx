@@ -79,7 +79,7 @@ export default function Events() {
                   value={icsLink}
                   readOnly
                   disabled
-                  className="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg block w-full p-2.5 pr-12 cursor-default" />
+                  className="bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg block w-full p-2.5 pr-12 cursor-default disabled:bg-gray-50" />
                 <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                   <Tooltip
                     content={copySuccess ? "Copied!" : "Copy to clipboard"}

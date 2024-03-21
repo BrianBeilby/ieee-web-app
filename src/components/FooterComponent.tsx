@@ -38,15 +38,15 @@ export default function FooterComponent() {
           </div>
           <div className="grid grid-cols-2 gap-8 mt-6 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="Links" />
-              <Footer.LinkGroup col>
+              <Footer.Title title="Links" className="text-sm md:text-md lg:text-lg" />
+              <Footer.LinkGroup col className="text-xs md:text-sm lg:text-lg">
                 <Footer.Link href="#">Example</Footer.Link>
                 <Footer.Link href="#">Example</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="follow us" />
-              <Footer.LinkGroup col>
+              <Footer.Title title="follow us" className="text-sm md:text-md lg:text-lg" />
+              <Footer.LinkGroup col className="text-xs md:text-sm lg:text-lg">
                 <Footer.Link
                   href="https://discord.gg/mJs6e6KFTa"
                   target="_blank"
