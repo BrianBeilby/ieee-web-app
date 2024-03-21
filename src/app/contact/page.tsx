@@ -53,11 +53,11 @@ export default function Contact() {
   };
 
   return (
-    <div className="container my-24 mx-auto md:px-6">
+    <div className="container my-24 mx-auto md:px-6 relative">
       <section className="mb-32">
         <div className="relative h-[500px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('/images/SacState_Zoom_Planetarium.jpg')]"></div>
         <div className="container px-6 md:px-12">
-          <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[450px] md:-mt-[350px] sm:-mt-[250px] xs:-mt-[150px] backdrop-blur-[30px]">
+          <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[450px] md:-mt-[350px] sm:-mt-[250px] xs:-mt-[150px] backdrop-blur-[30px] relative z-2">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6 z-10">
                 <form
@@ -192,7 +192,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <BackgroundBeams />
+            <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-1"/>
           </div>
         </div>
       </section>

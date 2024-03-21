@@ -38,7 +38,7 @@ export default function Events() {
             className="mx-auto rounded-lg shadow-lg"
           ></iframe>
         </div>
-        <div className="mt-6">
+        <div className="mt-6 mb-12">
           <Button
             outline
             gradientDuoTone="purpleToBlue"
