@@ -1,15 +1,18 @@
 "use client";
 import { BackgroundBeams } from "@/components/BackgroundBeams";
 import { useState } from "react";
+import { Spinner } from 'flowbite-react';
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState({ show: false, message: "", type: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -45,6 +48,8 @@ export default function Contact() {
         message: "An error occurred. Please try again.",
         type: "error",
       });
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -114,9 +119,10 @@ export default function Contact() {
                   </div>
                   <button
                     type="submit"
+                    disabled={isSubmitting}
                     className="mb-6 inline-block w-full rounded bg-primary-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0 4px 9px -4px #3b71ca] ease-in-out transition-shadow duration-150 hover:bg-primary-600 hover:shadow-[0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0 rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0"
                   >
-                    Send
+                    {isSubmitting ? <div><Spinner /></div> : "Send"}
                   </button>
                   {alert.show && (
                     <div
@@ -192,7 +198,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-1 max-sm:hidden"/>
+            <BackgroundBeams className="absolute top-0 left-0 w-full h-full z-1 max-sm:hidden" />
           </div>
         </div>
       </section>
