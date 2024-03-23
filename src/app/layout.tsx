@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import FooterComponent from "@/components/FooterComponent";
 import { ThemeModeScript } from "flowbite-react";
+import NextTopLoader from "nextjs-toploader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
           <ThemeModeScript />
         </head>
         <body className={`${inter.className} flex flex-col min-h-screen`}>
+          <NextTopLoader speed={400} crawlSpeed={600} />
           <Navbar />
           <main className="flex-grow">{children}</main>
           <FooterComponent />
