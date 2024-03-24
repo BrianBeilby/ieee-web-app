@@ -255,14 +255,14 @@ export default function About() {
                               href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join" 
                               target="_blank" 
                               rel="noopener noreferrer">
-                              HERE
+                              here
                             </Link>.
-                            &nbsp; Once a member, be sure to visit our events page linked below for more information on this event and other upcoming opportunities.
+                            &nbsp; Once a member, be sure to visit our events page for more information on upcoming opportunities.
                           </p>
                           <p>
                             <Link
                               href="/events"
-                              className="mt-6 group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
+                              className="mt-2 group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
                             >
                               Explore Events{" "}
                               <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />

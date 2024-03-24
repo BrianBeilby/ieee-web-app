@@ -26,7 +26,7 @@ export default function Events() {
   return (
     <div className="container mx-auto px-4 py-28">
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white">
-        Upcoming Events / Potential Plans
+        Upcoming Events 
       </h1>
       <div className="flex flex-col items-center">
         <div className="w-full max-w-6xl mx-auto">
@@ -116,7 +116,7 @@ export default function Events() {
 
       <div className="flex flex-col items-center justify-center"> {/* Start of events */}
         <SectionDivider />     
-        <h2 className="text-3xl capitalize text-center text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8" > Events </h2>
+        <h2 className="text-3xl capitalize text-center text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8" > Events & Plans</h2>
         <div>
           {eventsData && eventsData.map((event, index) => (
             <React.Fragment key={index}>
