@@ -1,15 +1,18 @@
 "use client";
 import React, { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import SectionDivider from "@/components/section-divider";
 import OutlinedCard from "@/components/Card";
 import Image from "next/image";
+import { FaArrowCircleDown } from 'react-icons/fa';
+
+
 
 const scrollToTwentyPercent = () => {
   const windowHeight = window.innerHeight;
-  const twentyPercentOfWindow = windowHeight * 0.9;
+  const twentyPercentOfWindow = windowHeight * 0.85;
 
   window.scrollTo({
     top: twentyPercentOfWindow,
@@ -24,7 +27,9 @@ export default function About() {
     target: ref,
     offset: ["0 1", "0.33 1.33"],
   });
-
+  
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
     <section className="container my-24 mx-auto md:px-8 mb-4 ">
       <div className="bg-transparent py-8 opacity-90">
@@ -92,8 +97,11 @@ export default function About() {
             onClick={scrollToTwentyPercent}
             style={{ cursor: "pointer" }}
           >
-            <SectionDivider />
+            <div className="text-yellow w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10">
+              <FaArrowCircleDown />
+            </div>
           </motion.div>
+
           <motion.div
             ref={ref}
             style={{ scale: scrollYProgress, opacity: scrollYProgress }}
@@ -106,6 +114,10 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.1,
+              }}
+              style={{
+                scale: scaleProgess,
+                opacity: opacityProgess,
               }}
               className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-30"
             >
@@ -183,34 +195,13 @@ export default function About() {
                 a positive impact on the future of technology!
               </p>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className=""
-            >
-              <SectionDivider />
-            </motion.div>
+            
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <Link
-                href="/contact"
-                className="group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
-              >
-                Contact Us here{" "}
-                <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-              </Link>
-            </motion.div>
-            <SectionDivider />
-            <motion.div
-              initial={{ opacity: 0, y: 100 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-            >
-              <div className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center">
+              <div className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center ">
                 {" "}
                 {/* Event Showcase  */}
                 <div data-theme="teal" className="mx-auto max-w-6xl">
@@ -275,9 +266,31 @@ export default function About() {
                 </div>
               </div>
             </motion.div>
-            <SectionDivider />
+          
             <OutlinedCard />
             <SectionDivider />
+            
+            <div className="container mx-auto px-6 text-lg md:text-xl text-white mb-10 max-w-[45rem] text-center leading-8 sm:mb-10">
+              <h3 className="text-3xl font-extrabold mb-8 tracking-tight text-white mt-8">
+                Contact Us{" "}
+              </h3>
+
+              <p className="text-lg md:text-xl text-white mb-4">
+              Do you have any questions, suggestions, or ideas? We'd love to hear from you! Whether you're a current member, prospective student, 
+              or someone interested in collaborating with us, feel free to reach out. Our team is here to help and support you in any way we can. 
+              Let's connect and work together to create a vibrant community of electrical engineering enthusiasts!
+              </p>
+
+              <Link
+                href="/contact"
+                className="group bg-black text-white px-7 py-3 flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
+              >
+                Contact Us here{" "}
+                <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+              </Link>
+            </div>
+
+
           </motion.div>{" "}
           {/* End of scroll element */}
         </div>
