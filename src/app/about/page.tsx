@@ -97,7 +97,7 @@ export default function About() {
             onClick={scrollToTwentyPercent}
             style={{ cursor: "pointer" }}
           >
-            <div className="text-yellow w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10">
+            <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10">
               <FaArrowCircleDown />
             </div>
           </motion.div>
@@ -276,9 +276,9 @@ export default function About() {
               </h3>
 
               <p className="text-lg md:text-xl text-white mb-4">
-              Do you have any questions, suggestions, or ideas? We'd love to hear from you! Whether you're a current member, prospective student, 
+              Do you have any questions, suggestions, or ideas? We&apos;d love to hear from you! Whether you&apos;re a current member, prospective student, 
               or someone interested in collaborating with us, feel free to reach out. Our team is here to help and support you in any way we can. 
-              Let's connect and work together to create a vibrant community of electrical engineering enthusiasts!
+              Let&apos;s connect and work together to create a vibrant community of electrical engineering enthusiasts!
               </p>
 
               <Link
