@@ -4,7 +4,7 @@ import { Carousel, CustomFlowbiteTheme } from "flowbite-react";
 import { Spotlight } from "@/components/Spotlight";
 import { TextGenerateEffect } from "@/components/TextGenerateEffect";
 import { useRef } from "react";
-import { eventsData } from "@/app/events/eventData";
+import { projectData } from "@/app/projectData";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -68,7 +68,7 @@ export default function Home() {
       </section>
       <div className="mx-auto max-w-screen-md h-56 sm:h-64 lg:h-80 xl:h-80 2xl:h-96 relative">
         <Carousel slide={true} indicators={false} theme={customTheme}>
-          {eventsData.map((project, index) => (
+          {projectData.map((project, index) => (
             <div key={index} className="relative w-full h-full">
               {isMobile ? (
                 <Image
@@ -89,7 +89,9 @@ export default function Home() {
                 >
                   <section className="bg-gray-100 max-w-full border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
                     <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-                      <h3 className="text-2xl font-semibold">{project.title}</h3>
+                      <h3 className="text-2xl font-semibold">
+                        {project.title}
+                      </h3>
                       <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
                         {project.description}
                       </p>
