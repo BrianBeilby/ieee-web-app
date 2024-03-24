@@ -26,7 +26,7 @@ export default function Events() {
   return (
     <div className="container mx-auto px-4 py-28">
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white">
-        Upcoming Events
+        Upcoming Events / Potential Plans
       </h1>
       <div className="flex flex-col items-center">
         <div className="w-full max-w-6xl mx-auto">

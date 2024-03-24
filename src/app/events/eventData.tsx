@@ -1,21 +1,27 @@
 
-export const eventsData = [  //Use this to add events in Events Page 
-    {
-      title: "PowerGrid",
-      description: "Power distribution and monitoring system for smart cities. Real-time analytics and fault detection.",
-      tags: ["IoT", "Power Systems", "Data Analytics", "Smart Cities", "Sensors"],
-      imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
-    },
-    {
-      title: "ElectroMotive",
-      description: "Electric vehicle charging infrastructure management platform. Integration with renewable energy sources.",
-      tags: ["EV Charging", "Renewable Energy", "Smart Grid", "IoT", "Energy Management"],
-      imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
-    },
-    {
-      title: "CircuitSolve",
-      description: "Simulation software for electrical circuit design and analysis. Support for SPICE models and FPGA development.",
-      tags: ["Circuit Design", "SPICE", "FPGA", "Simulation", "Electronics"],
-      imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
-    },
-  ] as const;
+export const eventsData = [
+  {
+    title: "Fundraising and Team Establishment",
+    description: "Form a dedicated team to efficiently coordinate fundraising events and brainstorm innovative projects for IEEE PES.",
+    tags: ["Fundraising", "Project Coordination", "IEEE PES"],
+    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
+  },
+  {
+    title: "FE Exam Guidance",
+    description: "Provide comprehensive guidance on navigating the FE Exam, offering essential tools for success. Delve into the importance and advantages of power-elective courses.",
+    tags: ["FE Exam","Power-elective Courses","Career Development"],
+    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
+  },
+  {
+    title: "Alumni Speakers",
+    description: "Invite accomplished alumni and industry professionals to share insights, experiences, and career paths in power-related positions, inspiring current members.",
+    tags: ["Alumni", "Industry Professionals", "Networking"],
+    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
+  },
+  {
+    title: "Upcoming Events",
+    description: "Participate in the Engineering and Computer Science Exposition on April 6th, showcasing projects, engaging with peers, and exploring opportunities.",
+    tags: ["Exposition", "Networking", "Project Showcase"],
+    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
+  },
+] as const;

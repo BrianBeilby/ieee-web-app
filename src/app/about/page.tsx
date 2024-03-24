@@ -76,15 +76,13 @@ export default function About() {
             className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
           >
             <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
-              Furthermore
+              Our role and goals
             </h2>
             <p className="">
-              At the Electrical Engineering Club, our mission is to foster a
-              collaborative environment where students can explore, learn, and
-              innovate in the field of electrical engineering. We aim to provide
-              opportunities for students to enhance their technical skills,
-              engage in hands-on projects, and connect with industry
-              professionals.
+            Provide students insights and knowledge about the electrical engineering
+            industry. Help members gain exposure to the power industry through meetings, projects and
+            other activities. Give students the necessary tools and advice for students to succeed in this
+            industry.
             </p>
           </motion.div>
           <motion.div
@@ -241,25 +239,25 @@ export default function About() {
                       <div className="p-2 bg-grey">
                         <div className="leading-relaxed">
                           <h2 className="leading-tight text-4xl font-bold">
-                            IEEE: Event
+                            How to be a member
                           </h2>
                           <p className="mt-4">
-                            Join us for our upcoming event at the Sacramento
-                            State Well, where we&apos;ll dive into the exciting
-                            world of Electronic Engineering.&nbsp;Whether
+                            Sign up to IEEE to become an official member. and dive into the exciting
+                            world of Electronic Engineering. Whether
                             you&apos;re a seasoned enthusiast or simply curious
                             about the field, everyone is invited to join us in
                             exploring the latest advancements in electronic
-                            technology.
+                            technology. 
                           </p>
                           <p className="mt-4">
-                            This event is a fantastic opportunity to learn
-                            alongside fellow students and industry experts,
-                            gaining valuable insights and expanding your
-                            understanding of electronic engineering. &nbsp; Be
-                            sure to visit our events page linked below for more
-                            information on this event and other upcoming
-                            opportunities
+                            It will cost $16 to be an official student member of IEEE. You can join by clicking the link&nbsp;
+                            <Link className="group inline-block px-3 py-1 bg-black text-yellow rounded-full border border-black hover:border-grey-950 hover:scale-110 transition duration-300" 
+                              href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join" 
+                              target="_blank" 
+                              rel="noopener noreferrer">
+                              HERE
+                            </Link>.
+                            &nbsp; Once a member, be sure to visit our events page linked below for more information on this event and other upcoming opportunities.
                           </p>
                           <p>
                             <Link
