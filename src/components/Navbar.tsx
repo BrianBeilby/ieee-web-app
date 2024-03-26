@@ -49,7 +49,7 @@ export default function Navbar() {
             <li>
               <a
                 href="/about"
-                className={`block py-2 px-3 rounded md:p-0 ${pathname === '/about' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500' : 'md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-white md:dark:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:dark:hover:bg-transparent'}`}
+                className={`block py-2 px-3 rounded md:p-0 ${pathname === '/about' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-500' : 'md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-white md:dark:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:dark:hover:bg-transparent'}`}
               >
                 About
               </a>
@@ -57,7 +57,7 @@ export default function Navbar() {
             <li>
               <a
                 href="/events"
-                className={`block py-2 px-3 rounded md:p-0 ${pathname === '/events' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700 dark:text-white md:dark:text-blue-500' : 'md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-white md:dark:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:dark:hover:bg-transparent'}`}
+                className={`block py-2 px-3 rounded md:p-0 ${pathname === '/events' ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-500' : 'md:hover:bg-transparent md:border-0 md:hover:text-blue-700 text-white md:dark:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:dark:hover:bg-transparent'}`}
               >
                 Events
               </a>
