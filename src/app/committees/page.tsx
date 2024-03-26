@@ -40,14 +40,14 @@ export default function Committees() {
         <div className="py-4 px-1 mx-auto max-w-screen-xl lg:py-8 lg:px-2">
           {sections.map((section) => (
             <div key={section.name} className="mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-10">
+              <h3 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">
                 {section.name}
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
                 {section.members.map((member, index) => (
                   <div
                     key={index}
-                    className="flex flex-col bg-gray-50 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-4 overflow-hidden"
+                    className="flex flex-col rounded-lg shadow bg-gray-800 border-gray-700 mx-4 overflow-hidden"
                     style={{
                       minWidth: "250px",
                       maxWidth: "calc(100% / 5 - 1rem)",
@@ -66,11 +66,11 @@ export default function Committees() {
                     </div>
                     <div className="p-4 flex-grow flex flex-col text-center">
                       <div>
-                        <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h3 className="text-xl font-bold tracking-tight text-white">
                           {member.name}
                         </h3>
                         <div className="mt-auto">
-                          <span className="text-gray-500 dark:text-gray-400">
+                          <span className="text-gray-400">
                             {member.role}
                           </span>
                         </div>
@@ -86,7 +86,7 @@ export default function Committees() {
                                 <li key={platform}>
                                   <a
                                     href={url}
-                                    className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                                    className="text-gray-500 hover:text-white"
                                     style={{ color: color }}
                                     target="_blank"
                                   >

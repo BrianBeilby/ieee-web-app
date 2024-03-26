@@ -62,7 +62,7 @@ export default function Contact() {
       <section className="mb-32">
         <div className="relative h-[500px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('/images/SacState_Zoom_Planetarium.jpg')]"></div>
         <div className="container px-6 md:px-12">
-          <div className="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[450px] md:-mt-[350px] sm:-mt-[250px] xs:-mt-[150px] backdrop-blur-[30px] relative z-2">
+          <div className="block rounded-lg px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] bg-[hsla(0,0%,5%,0.7)] shadow-black/20 md:py-16 md:px-12 -mt-[450px] md:-mt-[350px] sm:-mt-[250px] xs:-mt-[150px] backdrop-blur-[30px] relative z-2">
             <div className="flex flex-wrap">
               <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6 z-10">
                 <form
@@ -72,7 +72,7 @@ export default function Contact() {
                   <div className="relative mb-6">
                     <input
                       type="text"
-                      className="peer m-0 block h-[58px] w-full rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-primary-500 focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-50 focus:outline-none peer-focus:text-primary-500 dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-primary-500 dark:peer-focus:text-primary-500 [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                      className="peer m-0 block h-[58px] w-full rounded border border-solid bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight transition duration-200 ease-linear placeholder:text-transparent focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-50 focus:outline-none border-neutral-600 text-neutral-200 focus:border-primary-500 peer-focus:text-primary-500 [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
                       id="contactEmailInput"
                       placeholder="name@example.com"
                       value={email}
@@ -80,7 +80,7 @@ export default function Contact() {
                     />
                     <label
                       htmlFor="contactEmailInput"
-                      className="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-primary-500 peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary-500"
+                      className="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none text-neutral-200 peer-focus:text-primary-500"
                     >
                       Email address
                     </label>
@@ -88,7 +88,7 @@ export default function Contact() {
                   <div className="relative mb-6">
                     <input
                       type="text"
-                      className="peer m-0 block h-[58px] w-full rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight text-neutral-700 transition duration-200 ease-linear placeholder:text-transparent focus:border-primary-500 focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-50 focus:outline-none peer-focus:text-primary-500 dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-primary-500 dark:peer-focus:text-primary-500 [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                      className="peer m-0 block h-[58px] w-full rounded border border-solid bg-transparent bg-clip-padding px-3 py-4 text-base font-normal leading-tight transition duration-200 ease-linear placeholder:text-transparent focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-50 focus:outline-none border-neutral-600 text-neutral-200 focus:border-primary-500 peer-focus:text-primary-500 [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
                       id="contactNameInput"
                       placeholder="Jane Doe"
                       value={name}
@@ -96,14 +96,14 @@ export default function Contact() {
                     />
                     <label
                       htmlFor="contactNameInput"
-                      className="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-focus:text-primary-500 peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary-500"
+                      className="pointer-events-none absolute left-0 top-0 origin-[0_0] border border-solid border-transparent px-3 py-4 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-2 peer-focus:translate-x-[0.15rem] peer-focus:scale-[0.85] peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none text-neutral-200 peer-focus:text-primary-500"
                     >
                       Name
                     </label>
                   </div>
                   <div className="relative mb-6">
                     <textarea
-                      className="peer block min-h-[auto] w-full rounded border border-solid border-neutral-300 bg-transparent bg-clip-padding py-[0.32rem] px-3 leading-[1.6] text-neutral-700 transition duration-200 ease-linear  placeholder:text-transparent focus:border-primary-500 focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-50 focus:outline-none peer-focus:text-primary-500 dark:border-neutral-600 dark:text-neutral-200 dark:focus:border-primary-500 dark:peer-focus:text-primary-500 [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
+                      className="peer block min-h-[auto] w-full rounded border border-solid bg-transparent bg-clip-padding py-[0.32rem] px-3 leading-[1.6] transition duration-200 ease-linear  placeholder:text-transparent focus:pb-[0.625rem] focus:pt-[1.625rem] focus:text-neutral-50 focus:outline-none border-neutral-600 text-neutral-200 focus:border-primary-500 peer-focus:text-primary-500 [&:not(:placeholder-shown)]:pb-[0.625rem] [&:not(:placeholder-shown)]:pt-[1.625rem]"
                       id="contactMessgaeTextArea"
                       rows={3}
                       placeholder="Your message"
@@ -112,7 +112,7 @@ export default function Contact() {
                     ></textarea>
                     <label
                       htmlFor="contactMessgaeTextArea"
-                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] border border-solid border-transparent truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-1 peer-focus:scale-[0.85] peer-focus:text-primary-500 peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary-500"
+                      className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] border border-solid border-transparent truncate pt-[0.37rem] leading-[1.6] transition-[opacity,_transform] duration-200 ease-linear peer-focus:-translate-y-1 peer-focus:scale-[0.85] peer-[:not(:placeholder-shown)]:-translate-y-2 peer-[:not(:placeholder-shown)]:translate-x-[0.15rem] peer-[:not(:placeholder-shown)]:scale-[0.85] motion-reduce:transition-none text-neutral-200 peer-focus:text-primary-500"
                     >
                       Message
                     </label>
@@ -120,7 +120,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="mb-6 inline-block w-full rounded bg-primary-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0 4px 9px -4px #3b71ca] ease-in-out transition-shadow duration-150 hover:bg-primary-600 hover:shadow-[0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0 rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0"
+                    className="mb-6 inline-block w-full rounded bg-primary-500 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0 4px 9px -4px #3b71ca] ease-in-out transition-shadow duration-150 hover:bg-primary-600 hover:shadow-[0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0 8px 9px -4px rgba(59,113,202,0.3),0 4px 18px 0 rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0"
                   >
                     {isSubmitting ? <div><Spinner /></div> : "Send"}
                   </button>
@@ -165,14 +165,14 @@ export default function Contact() {
                   <div className="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
                     <div className="flex flex-col items-center justify-center w-full">
                       <div className="text-center">
-                        <p className="mb-2 text-2xl font-bold dark:text-white text-white">
+                        <p className="mb-2 text-2xl font-bold text-white">
                           Contact Us
                         </p>
-                        <p className="text-lg text-neutral-500 dark:text-neutral-200">
+                        <p className="text-lg text-neutral-200">
                           If you have any questions or concerns, feel free to
                           contact us by sending a message here.
                         </p>
-                        <p className="mt-20 text-lg text-neutral-500 dark:text-neutral-200">
+                        <p className="mt-20 text-lg text-neutral-200">
                           Alternatively, you can reach out to us on Discord.
                         </p>
                         <div className="mt-6">
