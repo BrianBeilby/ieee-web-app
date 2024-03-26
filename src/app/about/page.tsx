@@ -35,12 +35,6 @@ export default function About() {
       <div className="bg-transparent py-8 opacity-90">
         <div className="flex flex-col items-center justify-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
             className="container mx-auto px-4 text-center"
           >
             <div className=" py-4">
@@ -50,44 +44,26 @@ export default function About() {
             </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.5,
-            }}
+            
             className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-35"
           >
             <p className="text-lg md:text-xl text-white">
-              Welcome to the Electrical Engineering Club at Sacramento State!
-              Established in 2024, the Electrical Engineering Club has been a
-              vibrant hub for students passionate about electrical engineering.
-              From its humble beginnings, the club has grown into a community of
-              enthusiastic learners and innovators dedicated to advancing the
-              field of electrical engineering.
+              Welcome to the Institute of Electronic and Electrical Engineering chapter 
+              at Sacramento State! The IEEE Electrical Engineering Club has been a
+              vibrant hub for students passionate about electrical engineering and 
+              related topics. This chapter serves as a hub for students to network study
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
             className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
           >
             <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
-              Our role and goals
+              Our Goal
             </h2>
             <p className="">
-            Provide students insights and knowledge about the electrical engineering
-            industry. Help members gain exposure to the power industry through meetings, projects and
-            other activities. Give students the necessary tools and advice for students to succeed in this
-            industry.
+              Provide students with insight and knowledge about the field of electrical engineering.
+              We seek to assist our members gain exposure to the power industry through meetings, projects and
+              other activities, as well as providing students the necessary tools for success.
             </p>
           </motion.div>
           <motion.div
@@ -129,11 +105,6 @@ export default function About() {
                   <strong>Technical Workshops:</strong> We organize workshops on
                   various topics in electrical engineering, ranging from circuit
                   design to embedded systems.
-                </li>
-                <li className="mb-3">
-                  <strong>Project Competitions:</strong> We host project
-                  competitions where students can showcase their creativity and
-                  problem-solving abilities.
                 </li>
                 <li className="mb-3">
                   <strong>Guest Lectures:</strong> We invite industry experts
