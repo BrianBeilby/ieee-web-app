@@ -130,7 +130,6 @@ const sections = [
         role: "Treasurer",
         img: "/images/josh.jpg",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
           linkedin: "https://www.linkedin.com/in/joshua-de-gruccio-5461272b6/",
           // Add more social links as needed
         },
@@ -140,7 +139,6 @@ const sections = [
         role: "Vice President",
         img: "/images/jayden.jpg",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
           linkedin: "https://www.linkedin.com/in/jayden-matt-b6b032265/",
           // Add more social links as needed
         },
@@ -150,7 +148,6 @@ const sections = [
         role: "Secretary/Social Manager",
         img: "/images/slavik.jpg",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
           linkedin: "https://www.linkedin.com/in/slavkoles/",
           // Add more social links as needed
         },
@@ -165,11 +162,11 @@ const sections = [
     members: [
       {
         name: "Brian Beilby",
-        role: "Chair",
+        role: "Director",
         img: "/images/ProHeadshot1.png",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/brian-beilby-7b728923b/",
+          github: "https://github.com/BrianBeilby",
           // Add more social links as needed
         },
       },
@@ -179,17 +176,16 @@ const sections = [
         img: "/images/dfsdfsfsdfs.png",
         socials: {
           twitter: "https://twitter.com/Cobratate",
-          linkedin: "https://linkedin.com/in/bonniegreen",
           // Add more social links as needed
         },
       },
       {
         name: "Brian Beilby",
-        role: "Chair",
+        role: "Director",
         img: "/images/ProHeadshot1.png",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/brian-beilby-7b728923b/",
+          github: "https://github.com/BrianBeilby",
           // Add more social links as needed
         },
       },
@@ -202,68 +198,11 @@ const sections = [
       "The marketing team is responsible for promoting the club and its events. They are responsible for the club's social media, website, and branding.",
     members: [
       {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
+        name: "Joseph Muniz",
+        role: "Marketing Lead",
+        img: "/images/joseph.jpg",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
-          github: "https://github.com/BrianBeilby",
+          linkedin: "https://www.linkedin.com/in/jamunizca/?trk=contact-info",
           // Add more social links as needed
         },
       },
@@ -277,31 +216,21 @@ const sections = [
     members: [
       {
         name: "Brian Beilby",
-        role: "Chair",
+        role: "Director",
         img: "/images/ProHeadshot1.png",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          linkedin: "https://www.linkedin.com/in/brian-beilby-7b728923b/",
+          github: "https://github.com/BrianBeilby",
           // Add more social links as needed
         },
       },
       {
         name: "Michael Mehrdadi",
-        role: "Chair",
+        role: "Officer",
         img: "/images/mike.jpg",
         socials: {
-          twitter: "https://twitter.com/bonniegreen",
           linkedin: "https://www.linkedin.com/in/michael-mehrdadi-342191272/",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Chair",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          twitter: "https://twitter.com/bonniegreen",
-          linkedin: "https://linkedin.com/in/bonniegreen",
+          github: "https://github.com/Puffy12",
           // Add more social links as needed
         },
       },
