@@ -12,7 +12,7 @@ import { FaArrowCircleDown } from 'react-icons/fa';
 
 const scrollToTwentyPercent = () => {
   const windowHeight = window.innerHeight;
-  const twentyPercentOfWindow = windowHeight * 0.85;
+  const twentyPercentOfWindow = windowHeight * 0.51;
 
   window.scrollTo({
     top: twentyPercentOfWindow,
@@ -54,18 +54,7 @@ export default function About() {
               related topics. This chapter serves as a hub for students to network study
             </p>
           </motion.div>
-          <motion.div
-            className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
-          >
-            <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
-              Our Goal
-            </h2>
-            <p className="">
-              Provide students with insight and knowledge about the field of electrical engineering.
-              We seek to assist our members gain exposure to the power industry through meetings, projects and
-              other activities, as well as providing students the necessary tools for success.
-            </p>
-          </motion.div>
+          
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -84,6 +73,18 @@ export default function About() {
             className="flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out "
           >
             {" "}
+            <motion.div
+            className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
+          >
+            <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
+              Our Goal
+            </h2>
+            <p className="">
+              Provide students with insight and knowledge about the field of electrical engineering.
+              We seek to assist our members gain exposure to the power industry through meetings, projects and
+              other activities, as well as providing students the necessary tools for success.
+            </p>
+          </motion.div>
             {/*Motion Element Start  */}
             <motion.div
               initial={{ opacity: 0, y: 100 }}
