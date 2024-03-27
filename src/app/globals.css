@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --scrollbar-primary: rgb(17 24 39);
+  --scrollbar-secondary: rgba(114, 111, 111, 0.507);
+  --scrollbar-hover: rgba(214, 209, 209, 0.507);
   background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -25,4 +28,23 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Scrollbar Styles */
+*::-webkit-scrollbar {
+  width: 17px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-secondary);
+  border-radius: 14px;
+  border: 3px solid var(--scrollbar-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-hover);
 }

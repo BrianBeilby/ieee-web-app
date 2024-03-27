@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const customTheme: CustomFlowbiteTheme["footer"] = {
   root: {
-    base: "w-full rounded-lg shadow bg-gray-900 md:flex md:items-center md:justify-between",
+    base: "w-full shadow bg-gray-900 md:flex md:items-center md:justify-between",
   },
 };
 
