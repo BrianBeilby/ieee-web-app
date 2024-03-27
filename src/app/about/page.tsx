@@ -10,12 +10,21 @@ import { FaArrowCircleDown } from 'react-icons/fa';
 
 
 
-const scrollToTwentyPercent = () => {
-  const windowHeight = window.innerHeight;
-  const twentyPercentOfWindow = windowHeight * 0.85;
-
+const scrollToElement = () => {
+  const viewportHeight = window.innerHeight;
+  let scrollPercentage = 0.68; // Default scroll percentage
+  
+  /*
+  if (viewportHeight <= 600) {
+    scrollPercentage = 0.6; // Lower scroll percentage for smaller viewports
+  } else if (viewportHeight >= 1000) {
+    scrollPercentage = 0.9; // Higher scroll percentage for larger viewports
+  }
+  */
+  const targetPosition = viewportHeight * scrollPercentage;
+  
   window.scrollTo({
-    top: twentyPercentOfWindow,
+    top: targetPosition,
     behavior: "smooth",
   });
 };
@@ -33,8 +42,14 @@ export default function About() {
   return (
     <section className="container my-24 mx-auto md:px-8 mb-4 ">
       <div className="bg-transparent py-8 opacity-90">
-        <div className="flex flex-col items-center justify-center">
+        <div 
+        className="flex flex-col items-center justify-center">
           <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.1,
+              }}
             className="container mx-auto px-4 text-center"
           >
             <div className=" py-4">
@@ -44,7 +59,11 @@ export default function About() {
             </div>
           </motion.div>
           <motion.div
-            
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+            }}
             className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-35"
           >
             <p className="text-lg md:text-xl text-white">
@@ -55,9 +74,14 @@ export default function About() {
             </p>
           </motion.div>
           <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+            }}
             className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
           >
-            <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
+            <h2 className="text-4xl font-extrabold mb-8 tracking-tight text-white">
               Our Goal
             </h2>
             <p className="">
@@ -67,21 +91,23 @@ export default function About() {
             </p>
           </motion.div>
           <motion.div
+          
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            onClick={scrollToTwentyPercent}
+            onClick={scrollToElement}
             style={{ cursor: "pointer" }}
           >
-            <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10">
+            <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10" >
               <FaArrowCircleDown />
             </div>
           </motion.div>
-
+          
           <motion.div
             ref={ref}
             style={{ scale: scrollYProgress, opacity: scrollYProgress }}
             className="flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out "
+            
           >
             {" "}
             {/*Motion Element Start  */}
@@ -91,13 +117,9 @@ export default function About() {
               transition={{
                 delay: 0.1,
               }}
-              style={{
-                scale: scaleProgess,
-                opacity: opacityProgess,
-              }}
               className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-30"
             >
-              <h3 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
+              <h3 className="text-3xl font-extrabold mb-8 tracking-tight text-white" >
                 What We Do
               </h3>
               <ul className="list-disc pl-5">
