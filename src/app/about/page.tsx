@@ -6,16 +6,23 @@ import { BsArrowRight } from "react-icons/bs";
 import SectionDivider from "@/components/section-divider";
 import OutlinedCard from "@/components/Card";
 import Image from "next/image";
-import { FaArrowCircleDown } from 'react-icons/fa';
+import { FaArrowCircleDown } from "react-icons/fa";
 
+const scrollToElement = () => {
+  const viewportHeight = window.innerHeight;
+  let scrollPercentage = 0.68; // Default scroll percentage
 
-
-const scrollToTwentyPercent = () => {
-  const windowHeight = window.innerHeight;
-  const twentyPercentOfWindow = windowHeight * 0.51;
+  /*
+  if (viewportHeight <= 600) {
+    scrollPercentage = 0.6; // Lower scroll percentage for smaller viewports
+  } else if (viewportHeight >= 1000) {
+    scrollPercentage = 0.9; // Higher scroll percentage for larger viewports
+  }
+  */
+  const targetPosition = viewportHeight * scrollPercentage;
 
   window.scrollTo({
-    top: twentyPercentOfWindow,
+    top: targetPosition,
     behavior: "smooth",
   });
 };
@@ -27,7 +34,7 @@ export default function About() {
     target: ref,
     offset: ["0 1", "0.33 1.33"],
   });
-  
+
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   return (
@@ -35,6 +42,11 @@ export default function About() {
       <div className="bg-transparent py-8 opacity-90">
         <div className="flex flex-col items-center justify-center">
           <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+            }}
             className="container mx-auto px-4 text-center"
           >
             <div className=" py-4">
@@ -44,57 +56,56 @@ export default function About() {
             </div>
           </motion.div>
           <motion.div
-            
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 0.1,
+            }}
             className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-35"
           >
             <p className="text-lg md:text-xl text-white">
-              Welcome to the Institute of Electronic and Electrical Engineering chapter 
-              at Sacramento State! The IEEE Electrical Engineering Club has been a
-              vibrant hub for students passionate about electrical engineering and 
-              related topics. This chapter serves as a hub for students to network study
+              Welcome to the Institute of Electronic and Electrical Engineering
+              chapter at Sacramento State! The IEEE Electrical Engineering Club
+              has been a vibrant hub for students passionate about electrical
+              engineering and related topics. This chapter serves as a hub for
+              students to network study
             </p>
           </motion.div>
-          
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            onClick={scrollToTwentyPercent}
+            onClick={scrollToElement}
             style={{ cursor: "pointer" }}
           >
             <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10">
               <FaArrowCircleDown />
             </div>
           </motion.div>
-
           <motion.div
             ref={ref}
             style={{ scale: scrollYProgress, opacity: scrollYProgress }}
             className="flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out "
           >
             {" "}
-            <motion.div
-            className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30"
-          >
-            <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
-              Our Goal
-            </h2>
-            <p className="">
-              Provide students with insight and knowledge about the field of electrical engineering.
-              We seek to assist our members gain exposure to the power industry through meetings, projects and
-              other activities, as well as providing students the necessary tools for success.
-            </p>
-          </motion.div>
+            <motion.div className="container mx-auto px-6 text-lg md:text-xl text-white mb-8 max-w-[45rem] text-center leading-8 sm:mb-30">
+              <h2 className="text-3xl font-extrabold mb-8 tracking-tight text-white">
+                Our Goal
+              </h2>
+              <p className="">
+                Provide students with insight and knowledge about the field of
+                electrical engineering. We seek to assist our members gain
+                exposure to the power industry through meetings, projects and
+                other activities, as well as providing students the necessary
+                tools for success.
+              </p>
+            </motion.div>
             {/*Motion Element Start  */}
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.1,
-              }}
-              style={{
-                scale: scaleProgess,
-                opacity: opacityProgess,
               }}
               className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-30"
             >
@@ -167,7 +178,6 @@ export default function About() {
                 a positive impact on the future of technology!
               </p>
             </motion.div>
-            
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
@@ -205,22 +215,26 @@ export default function About() {
                             How to be a member
                           </h2>
                           <p className="mt-4">
-                            Sign up to IEEE to become an official member. and dive into the exciting
-                            world of Electronic Engineering. Whether
-                            you&apos;re a seasoned enthusiast or simply curious
-                            about the field, everyone is invited to join us in
-                            exploring the latest advancements in electronic
-                            technology. 
+                            Sign up to IEEE to become an official member. and
+                            dive into the exciting world of Electronic
+                            Engineering. Whether you&apos;re a seasoned
+                            enthusiast or simply curious about the field,
+                            everyone is invited to join us in exploring the
+                            latest advancements in electronic technology.
                           </p>
                           <p className="mt-4">
-                            It will cost $16 to be an official student member of IEEE. You can join by clicking the link&nbsp;
-                            <Link className="group inline-block px-3 py-1 bg-black text-yellow rounded-full border border-black hover:border-grey-950 hover:scale-110 transition duration-300" 
-                              href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join" 
-                              target="_blank" 
-                              rel="noopener noreferrer">
+                            It will cost $16 to be an official student member of
+                            IEEE. You can join by clicking the link&nbsp;
+                            <Link
+                              className="group inline-block px-3 py-1 bg-black text-yellow rounded-full border border-black hover:border-grey-950 hover:scale-110 transition duration-300"
+                              href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               here
-                            </Link>.
-                            &nbsp; Once a member, be sure to visit our events page for more information on upcoming opportunities.
+                            </Link>
+                            . &nbsp; Once a member, be sure to visit our events
+                            page for more information on upcoming opportunities.
                           </p>
                           <p>
                             <Link
@@ -238,19 +252,21 @@ export default function About() {
                 </div>
               </div>
             </motion.div>
-          
             <OutlinedCard />
             <SectionDivider />
-            
             <div className="container mx-auto px-6 text-lg md:text-xl text-white mb-10 max-w-[45rem] text-center leading-8 sm:mb-10">
               <h3 className="text-3xl font-extrabold mb-8 tracking-tight text-white mt-8">
                 Contact Us{" "}
               </h3>
 
               <p className="text-lg md:text-xl text-white mb-4">
-              Do you have any questions, suggestions, or ideas? We&apos;d love to hear from you! Whether you&apos;re a current member, prospective student, 
-              or someone interested in collaborating with us, feel free to reach out. Our team is here to help and support you in any way we can. 
-              Let&apos;s connect and work together to create a vibrant community of electrical engineering enthusiasts!
+                Do you have any questions, suggestions, or ideas? We&apos;d love
+                to hear from you! Whether you&apos;re a current member,
+                prospective student, or someone interested in collaborating with
+                us, feel free to reach out. Our team is here to help and support
+                you in any way we can. Let&apos;s connect and work together to
+                create a vibrant community of electrical engineering
+                enthusiasts!
               </p>
 
               <Link
@@ -261,8 +277,6 @@ export default function About() {
                 <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
               </Link>
             </div>
-
-
           </motion.div>{" "}
           {/* End of scroll element */}
         </div>
