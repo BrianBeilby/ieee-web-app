@@ -70,6 +70,30 @@ export default function About() {
               engineering and related topics. This chapter serves as a hub for
               students to network study
             </p>
+            <div className="flex justify-center items-center mt-8">
+            <div className="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ] position: relative; transform-style: preserve-3d;">
+              <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                <div className="h-full">
+                  <article className="h-full">
+                    <div className="h-full">
+                      <div className="relative">
+                        <Image
+                          width={800}
+                          height={450}
+                          src="/images/ieee_members.jpg"
+                          className="object-cover"
+                          alt={""}
+                          layout="intrinsic"
+                        />
+                        <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
+                        <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
