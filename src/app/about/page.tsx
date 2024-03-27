@@ -10,7 +10,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 
 const scrollToElement = () => {
   const viewportHeight = window.innerHeight;
-  let scrollPercentage = 0.68; // Default scroll percentage
+  let scrollPercentage = 0.51; // Default scroll percentage
 
   /*
   if (viewportHeight <= 600) {
