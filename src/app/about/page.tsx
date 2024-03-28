@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { Variants, motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import SectionDivider from "@/components/section-divider";
@@ -10,7 +10,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 
 const scrollToElement = () => {
   const viewportHeight = window.innerHeight;
-  let scrollPercentage = 0.51; // Default scroll percentage
+  let scrollPercentage = 0.87; // Default scroll percentage
 
   /*
   if (viewportHeight <= 600) {
@@ -27,8 +27,25 @@ const scrollToElement = () => {
   });
 };
 
+const arrowVariants: Variants = {
+  animate: {
+    y: [0, -15, 0],
+    transition: {
+      duration: 1.2,
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatType: "loop", // Ensure this is a specific string literal, not just 'string'
+    },
+  },
+};
+
 export default function About() {
   const ref = useRef<HTMLDivElement>(null);
+
+  const imageVariants = {
+    hidden: { scale: 0.85, opacity: 0 },
+    visible: { scale: 1, opacity: 1, transition: { duration: 1.4 } },
+  };
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -61,7 +78,7 @@ export default function About() {
             transition={{
               delay: 0.1,
             }}
-            className="container mx-auto px-6 text-lg md:text-xl text-white mb-28 max-w-[45rem] text-center leading-8 sm:mb-35"
+            className="container mx-auto px-6 text-lg md:text-xl text-white mb-14 max-w-[45rem] text-center leading-8 sm:mb-18"
           >
             <p className="text-lg md:text-xl text-white">
               Welcome to the Institute of Electronic and Electrical Engineering
@@ -71,38 +88,54 @@ export default function About() {
               students to network study
             </p>
             <div className="flex justify-center items-center mt-8">
-            <div className="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ] position: relative; transform-style: preserve-3d;">
-              <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
-                <div className="h-full">
-                  <article className="h-full">
-                    <div className="h-full">
-                      <div className="relative">
-                        <Image
-                          width={800}
-                          height={450}
-                          src="/images/ieee_members.jpg"
-                          className="object-cover"
-                          alt={""}
-                          layout="intrinsic"
-                        />
-                        <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
-                        <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
+              <div className="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ] position: relative; transform-style: preserve-3d;">
+                <div className="flex-shrink-0 self-stretch sm:flex-basis-40 md:flex-basis-50 xl:flex-basis-60">
+                  <div className="h-full">
+                    <article className="h-full">
+                      <div className="h-full">
+                        <div className="relative">
+                          <motion.div
+                            className="mx-auto max-w-[45rem]"
+                            variants={imageVariants}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
+                          >
+                            <div className="relative overflow-hidden">
+                              <Image
+                                width={650}
+                                height={350}
+                                src="/images/ieee_members1.jpg"
+                                alt=""
+                                className="rounded-lg shadow-lg"
+                              />
+                              <motion.div
+                                className="absolute inset-0 bg-black bg-opacity-30"
+                                initial={{ opacity: 0 }}
+                                whileHover={{
+                                  opacity: 0.5,
+                                  transition: { duration: 0.5 },
+                                }}
+                              ></motion.div>
+                            </div>
+                          </motion.div>
+                          <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
+                          <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
+                        </div>
                       </div>
-                    </div>
-                  </article>
+                    </article>
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
+            variants={arrowVariants}
+            animate="animate"
             onClick={scrollToElement}
             style={{ cursor: "pointer" }}
           >
-            <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mt-10 mb-10">
+            <div className="text-white w-14 h-14 text-5xl cursor-pointer z-10 mb-10">
               <FaArrowCircleDown />
             </div>
           </motion.div>
