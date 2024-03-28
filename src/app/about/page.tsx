@@ -284,7 +284,7 @@ export default function About() {
                             </h2>
                             <p className="mt-4">
                               Sign up to IEEE to become an official member and dive into
-                              the exciting world of Electronic Engineering. Whether you're a
+                              the exciting world of Electronic Engineering. Whether you&apos;re a
                               seasoned enthusiast or simply curious about the field,
                               everyone is invited to join us in exploring the latest
                               advancements in electronic technology.
