@@ -179,9 +179,9 @@ const sections = [
     ],
   },
   {
-    name: "Activities",
+    name: "Key Members",
     description:
-      "The activities team is responsible for planning and executing events for the club. They are responsible for the club's events, workshops, and socials.",
+      "These individuals are responsible for planning and executing events for the club such as events, workshops, and socials.",
     members: [
       {
         name: "Brian Beilby",
@@ -193,26 +193,18 @@ const sections = [
           // Add more social links as needed
         },
       },
-      {
-        name: "John Shifftler",
-        role: "Member",
-        img: "/images/dfsdfsfsdfs.png",
+
+            {
+        name: "Chamberlain Hinkley, EIT",
+        role: "Fe Advisor",
+        img: "/images/Chamberlain Hinkley.jpg",
         socials: {
-          twitter: "https://twitter.com/Cobratate",
-          // Add more social links as needed
-        },
-      },
-      {
-        name: "Brian Beilby",
-        role: "Director",
-        img: "/images/ProHeadshot1.png",
-        socials: {
-          linkedin: "https://www.linkedin.com/in/brian-beilby-7b728923b/",
-          github: "https://github.com/BrianBeilby",
+          linkedin: "https://www.linkedin.com/in/chamberlain-hinkley-eit-365240210/",
           // Add more social links as needed
         },
       },
       // Define members similar to above
+
     ],
   },
   {
@@ -226,6 +218,15 @@ const sections = [
         img: "/images/joseph.jpg",
         socials: {
           linkedin: "https://www.linkedin.com/in/jamunizca/?trk=contact-info",
+          // Add more social links as needed
+        },
+      },
+      {
+        name: "Fernando Garibay",
+        role: "Marketing Assistant",
+        img: "/images/Fernando.jpg",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/fernandogaribay1/",
           // Add more social links as needed
         },
       },
