@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { IconType } from "react-icons";
 import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 interface SocialIconDetails {
   icon: IconType;
@@ -34,24 +35,48 @@ const socialIcons: SocialIcons = {
 };
 
 export default function Committees() {
+  const cardVariants = {
+    initial: { opacity: 0, y: 20 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", duration: 0.5 },
+    },
+    whileHover: { scale: 1.05, transition: { type: "spring", stiffness: 300 } },
+  };
+
   return (
     <div className="container my-24 mx-auto md:px-6">
-      <section className="bg-transparent rounded-lg">
+      <motion.section
+        initial="initial"
+        animate="animate"
+        className="bg-transparent rounded-lg"
+        variants={{
+          initial: { opacity: 0 },
+          animate: { opacity: 1, transition: { staggerChildren: 0.2 } },
+        }}
+      >
         <div className="py-4 px-1 mx-auto max-w-screen-xl lg:py-8 lg:px-2">
           {sections.map((section) => (
-            <div key={section.name} className="mb-12">
+            <motion.div
+              key={section.name}
+              className="mb-12"
+              variants={cardVariants}
+            >
               <h3 className="text-3xl md:text-4xl font-bold text-white text-center mb-10">
                 {section.name}
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
                 {section.members.map((member, index) => (
-                  <div
+                  <motion.div
                     key={index}
                     className="flex flex-col rounded-lg shadow bg-gray-800 border-gray-700 mx-4 overflow-hidden"
                     style={{
                       minWidth: "250px",
                       maxWidth: "calc(100% / 5 - 1rem)",
                     }}
+                    variants={cardVariants}
+                    whileHover="whileHover"
                   >
                     <div className="flex flex-col items-center p-4">
                       <div className="relative w-32 h-32 flex-none overflow-hidden rounded-full">
@@ -70,9 +95,7 @@ export default function Committees() {
                           {member.name}
                         </h3>
                         <div className="mt-auto">
-                          <span className="text-gray-400">
-                            {member.role}
-                          </span>
+                          <span className="text-gray-400">{member.role}</span>
                         </div>
 
                         <ul className="flex flex-wrap justify-center space-x-1 mt-2">
@@ -99,13 +122,13 @@ export default function Committees() {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
