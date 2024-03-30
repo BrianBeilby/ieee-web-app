@@ -207,7 +207,7 @@ export default function About() {
                     <Image
                       width={733}
                       height={412}
-                      src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
+                      src="/images/IMG_3873.jpg"
                       className="w-full rounded-lg"
                       alt={""}
                     />
@@ -219,7 +219,7 @@ export default function About() {
                 </div>
 
                 <div className="ml-6">
-                  <p> Look at all the fun our members have </p>
+                  <p> Take a look at our power engineering lab  </p>
                 </div>
               </div>
 
@@ -259,8 +259,8 @@ export default function About() {
                                 <div className="relative">
                                   <Image
                                     width={600}
-                                    height={350}
-                                    src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
+                                    height={650}
+                                    src="/images/Screen_Shot_2024-02-20_at_2.28.38_PM.png"
                                     className="h-full object-cover"
                                     alt={""}
                                   />

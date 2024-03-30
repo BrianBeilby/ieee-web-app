@@ -140,7 +140,7 @@ const sections = [
       "The executive team is responsible for the overall management of the club. They are responsible for the club's operations, finances, and strategic direction.",
     members: [
       {
-        name: "Pasquale De Luca",
+        name: "Pasquale De Luca, EIT",
         role: "President",
         img: "/images/pasquale.jpg",
         socials: {
@@ -158,7 +158,7 @@ const sections = [
         },
       },
       {
-        name: "Jayden Matt",
+        name: "Jayden Matt EIT",
         role: "Vice President",
         img: "/images/jayden.jpg",
         socials: {
@@ -184,12 +184,20 @@ const sections = [
       "These individuals are responsible for planning and executing events for the club such as events, workshops, and socials.",
     members: [
       {
-        name: "Brian Beilby",
-        role: "Director",
-        img: "/images/ProHeadshot1.png",
+        name: "Mahyar Zarghami",
+        role: "Club Chair",
+        img: "/images/MahyarZarghami.jpg",
         socials: {
-          linkedin: "https://www.linkedin.com/in/brian-beilby-7b728923b/",
-          github: "https://github.com/BrianBeilby",
+          linkedin: "https://www.linkedin.com/in/mahyar-zarghami-80296788/",
+          // Add more social links as needed
+        },
+      },
+      {
+        name: "Jay Mearns, PE ",
+        role: "Sr. Advisor",
+        img: "/images/Jaymearns.jpg",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/james-mearns-4a42299/",
           // Add more social links as needed
         },
       },
@@ -200,6 +208,15 @@ const sections = [
         img: "/images/Chamberlain Hinkley.jpg",
         socials: {
           linkedin: "https://www.linkedin.com/in/chamberlain-hinkley-eit-365240210/",
+          // Add more social links as needed
+        },
+      },
+      {
+        name: "Axel Rios, EIT",
+        role: "Historian",
+        img: "/images/Axelrios.jpg",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/axel-rios-eit-57354118a/",
           // Add more social links as needed
         },
       },
@@ -223,7 +240,7 @@ const sections = [
       },
       {
         name: "Fernando Garibay",
-        role: "Marketing Assistant",
+        role: "Marketing Officer",
         img: "/images/Fernando.jpg",
         socials: {
           linkedin: "https://www.linkedin.com/in/fernandogaribay1/",
@@ -240,7 +257,7 @@ const sections = [
     members: [
       {
         name: "Brian Beilby",
-        role: "Director",
+        role: "Website Director",
         img: "/images/ProHeadshot1.png",
         socials: {
           linkedin: "https://www.linkedin.com/in/brian-beilby-7b728923b/",
