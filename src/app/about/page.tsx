@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React, { SetStateAction, useRef, useState } from "react";
 import { Variants, motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
@@ -7,10 +7,11 @@ import SectionDivider from "@/components/section-divider";
 import OutlinedCard from "@/components/Card";
 import Image from "next/image";
 import { FaArrowCircleDown } from "react-icons/fa";
+import ImageModal from "@/components/ImageModal"
 
 const scrollToElement = () => {
   const viewportHeight = window.innerHeight;
-  let scrollPercentage = 0.70; // Default scroll percentage
+  let scrollPercentage = 0.7; // Default scroll percentage
 
   /*
   if (viewportHeight <= 600) {
@@ -40,6 +41,8 @@ const arrowVariants: Variants = {
 };
 
 export default function About() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImageUrl, setModalImageUrl] = useState('');
   const ref = useRef<HTMLDivElement>(null);
 
   const imageVariants = {
@@ -51,6 +54,19 @@ export default function About() {
     target: ref,
     offset: ["0 1", "0.33 1.33"],
   });
+
+  const openModalWithImage = (imageUrl: SetStateAction<string>) => {
+    setModalImageUrl(imageUrl);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleImageClick = (imageUrl: SetStateAction<string>) => {
+    openModalWithImage(imageUrl);
+  };
 
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
@@ -101,7 +117,7 @@ export default function About() {
                             whileInView="visible"
                             viewport={{ once: true }}
                           >
-                            <div className="relative overflow-hidden">
+                            <div onClick={() => handleImageClick("/images/ieee_members2.jpg")} className="relative overflow-hidden">
                               <Image
                                 width={650}
                                 height={350}
@@ -118,6 +134,7 @@ export default function About() {
                                 }}
                               ></motion.div>
                             </div>
+                            <ImageModal width={2542} height={930} isOpen={isModalOpen} imageUrl={modalImageUrl} onClose={closeModal} />
                           </motion.div>
                           <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
                           <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
@@ -201,14 +218,14 @@ export default function About() {
               }}
               className="container mx-auto px-6 text-lg md:text-xl text-white mb-10 max-w-[45rem] text-center leading-8 sm:mb-10"
             >
-              <div className="flex items-center ">
-                <div className="relative w-full max-w-md">
-                  <div className="relative">
+              <div className="flex items-center">
+                <div className="relative w-full max-w-md h-1/2">
+                  <div onClick={() => handleImageClick("/images/PowerLab_cropped.jpg")} className="relative">
                     <Image
-                      width={733}
-                      height={412}
-                      src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
-                      className="w-full rounded-lg"
+                      width={2296}
+                      height={2516}
+                      src="/images/PowerLab_cropped.jpg"
+                      className="w-full rounded-lg h-1/2"
                       alt={""}
                     />
 
@@ -216,10 +233,11 @@ export default function About() {
 
                     <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
                   </div>
+                  <ImageModal width={1200} height={800} isOpen={isModalOpen} imageUrl={modalImageUrl} onClose={closeModal} />
                 </div>
 
                 <div className="ml-6">
-                  <p> Look at all the fun our members have </p>
+                  <p> Take a look at our lab donated by SMUD and powered by LN Soft </p>
                 </div>
               </div>
 
@@ -235,33 +253,35 @@ export default function About() {
                 a positive impact on the future of technology!
               </p>
             </motion.div>
-            
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <div className="min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center">
+              <div className="min-h-screen flex flex-col lg:flex-row items-center p-8 sm:p-16 md:p-24 justify-center">
                 {/* Event Showcase  */}
                 <div data-theme="teal" className="mx-auto max-w-6xl">
                   <h2 className="sr-only">Featured case study</h2>
                   <section className="font-sans text-white">
                     <div className="lg:flex lg:items-center">
-                      <div className="flex-shrink-0 self-stretch lg:w-1/2"> {/* Image */}
+                      <div className="lg:w-1/2 flex justify-center lg:justify-end">
+                        {" "}
+                        {/* Image */}
                         <motion.div
                           initial={{ opacity: 0, y: 100 }}
                           animate={{ opacity: 1, y: 0 }}
                           transition={{ delay: 0.4 }}
+                          className="w-full max-w-md lg:max-w-lg mr-4"
                         >
                           <div className="h-full">
                             <article className="h-full">
                               <div className="h-full">
                                 <div className="relative">
                                   <Image
-                                    width={600}
-                                    height={350}
-                                    src="/images/wp4918510-desktop-bmw-e30-wallpapers.jpg"
-                                    className="h-full object-cover"
+                                    width={674}
+                                    height={248}
+                                    src="/images/Screen_Shot_2024-02-20_at_2.28.38_PM.png"
+                                    className="rounded-lg object-contain"
                                     alt={""}
                                   />
                                   <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
@@ -272,7 +292,9 @@ export default function About() {
                           </div>
                         </motion.div>
                       </div>
-                      <div className="p-2 bg-gray lg:w-1/2"> {/* Text */}
+                      <div className="p-2 bg-gray lg:flex-1">
+                        {" "}
+                        {/* Text */}
                         <motion.div
                           initial={{ opacity: 0, y: 100 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -280,18 +302,19 @@ export default function About() {
                         >
                           <div className="leading-relaxed">
                             <h2 className="leading-tight text-4xl font-bold">
-                              How to be a member
+                              How to become a member
                             </h2>
                             <p className="mt-4">
-                              Sign up to IEEE to become an official member and dive into
-                              the exciting world of Electronic Engineering. Whether you&apos;re a
-                              seasoned enthusiast or simply curious about the field,
-                              everyone is invited to join us in exploring the latest
-                              advancements in electronic technology.
+                              Sign up to IEEE to become an official member and
+                              dive into the exciting world of Electronic
+                              Engineering. Whether you&apos;re a seasoned
+                              enthusiast or simply curious about the field,
+                              everyone is invited to join us in exploring the
+                              latest advancements in electronic technology.
                             </p>
                             <p className="mt-4">
-                              It will cost $16 to be an official student member of IEEE. You
-                              can join by clicking the link&nbsp;
+                              It will cost $16 to be an official student member
+                              of IEEE. You can join by clicking the link&nbsp;
                               <Link
                                 className="group inline-block px-3 py-1 bg-black text-yellow rounded-full border border-black hover:border-gray-950 hover:scale-110 transition duration-300"
                                 href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
@@ -300,8 +323,9 @@ export default function About() {
                               >
                                 here
                               </Link>
-                              . &nbsp; Once a member, be sure to visit our events page for
-                              more information on upcoming opportunities.
+                              . &nbsp; Once a member, be sure to visit our
+                              events page for more information on upcoming
+                              opportunities.
                             </p>
                             <p>
                               <Link
@@ -320,8 +344,6 @@ export default function About() {
                 </div>
               </div>
             </motion.div>
-
-                      
             <OutlinedCard />
             <SectionDivider />
             <div className="container mx-auto px-6 text-lg md:text-xl text-white mb-10 max-w-[45rem] text-center leading-8 sm:mb-10">
