@@ -1,14 +1,14 @@
 export const projectData = [
   // Use this to add events in landing page carousel
   {
-    title: "PowerGrid",
+    title: "Bops Pumped Storage",
     description:
-      "Power distribution and monitoring system for smart cities. Real-time analytics and fault detection.",
-    tags: ["IoT", "Power Systems", "Data Analytics", "Smart Cities", "Sensors"],
-    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
+      "A pumped storage Feasibility study in Milpitas Caliornia created by Slav Kolensikovich, Chamberlain Hinkley, Axel Rios, Jayden Matt and, Pasquale De Luca ",
+    tags: ["Senior Project", "Power Systems", "Smart Cities"],
+    imageUrl: "/images/Bops.PNG",
   },
   {
-    title: "ElectroMotive",
+    title: "BOPS",
     description:
       "Electric vehicle charging infrastructure management platform. Integration with renewable energy sources.",
     tags: [
@@ -20,11 +20,5 @@ export const projectData = [
     ],
     imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
   },
-  {
-    title: "CircuitSolve",
-    description:
-      "Simulation software for electrical circuit design and analysis. Support for SPICE models and FPGA development.",
-    tags: ["Circuit Design", "SPICE", "FPGA", "Simulation", "Electronics"],
-    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
-  },
+  
 ] as const;
