@@ -7,7 +7,7 @@ import SectionDivider from "@/components/section-divider";
 import OutlinedCard from "@/components/Card";
 import Image from "next/image";
 import { FaArrowCircleDown } from "react-icons/fa";
-import ImageModal from "@/components/ImageModal"
+import ImageModal from "@/components/ImageModal";
 
 const scrollToElement = () => {
   const viewportHeight = window.innerHeight;
@@ -42,7 +42,7 @@ const arrowVariants: Variants = {
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImageUrl, setModalImageUrl] = useState('');
+  const [modalImageUrl, setModalImageUrl] = useState("");
   const ref = useRef<HTMLDivElement>(null);
 
   const imageVariants = {
@@ -117,24 +117,28 @@ export default function About() {
                             whileInView="visible"
                             viewport={{ once: true }}
                           >
-                            <div onClick={() => handleImageClick("/images/ieee_members2.jpg")} className="relative overflow-hidden">
+                            <div
+                              onClick={() =>
+                                handleImageClick("/images/ieee_members2.jpg")
+                              }
+                              className="relative overflow-hidden cursor-pointer hover:brightness-110"
+                            >
                               <Image
                                 width={650}
                                 height={350}
                                 src="/images/ieee_members2.jpg"
                                 alt=""
-                                className="rounded-lg shadow-lg"
+                                className="rounded-lg"
                               />
-                              <motion.div
-                                className="absolute inset-0 bg-black bg-opacity-30"
-                                initial={{ opacity: 0 }}
-                                whileHover={{
-                                  opacity: 0.5,
-                                  transition: { duration: 0.5 },
-                                }}
-                              ></motion.div>
                             </div>
-                            <ImageModal width={2542} height={930} isOpen={isModalOpen} imageUrl={modalImageUrl} onClose={closeModal} />
+                            <ImageModal
+                              width={2542}
+                              height={930}
+                              title="2024 IEEE Members"
+                              isOpen={isModalOpen}
+                              imageUrl={modalImageUrl}
+                              onClose={closeModal}
+                            />
                           </motion.div>
                           <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
                           <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
@@ -220,7 +224,12 @@ export default function About() {
             >
               <div className="flex items-center">
                 <div className="relative w-full max-w-md h-1/2">
-                  <div onClick={() => handleImageClick("/images/PowerLab_cropped.jpg")} className="relative">
+                  <div
+                    onClick={() =>
+                      handleImageClick("/images/PowerLab_cropped.jpg")
+                    }
+                    className="relative cursor-pointer hover:brightness-110"
+                  >
                     <Image
                       width={2296}
                       height={2516}
@@ -233,11 +242,22 @@ export default function About() {
 
                     <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
                   </div>
-                  <ImageModal width={1200} height={800} isOpen={isModalOpen} imageUrl={modalImageUrl} onClose={closeModal} />
+                  <ImageModal
+                    width={1600}
+                    height={800}
+                    title="CSUS Power Lab"
+                    isOpen={isModalOpen}
+                    imageUrl={modalImageUrl}
+                    onClose={closeModal}
+                  />
                 </div>
 
                 <div className="ml-6">
-                  <p> Take a look at our lab donated by SMUD and powered by LN Soft </p>
+                  <p>
+                    {" "}
+                    Take a look at our lab donated by SMUD and powered by LN
+                    Soft{" "}
+                  </p>
                 </div>
               </div>
 
@@ -276,7 +296,14 @@ export default function About() {
                           <div className="h-full">
                             <article className="h-full">
                               <div className="h-full">
-                                <div className="relative">
+                                <div
+                                  onClick={() =>
+                                    handleImageClick(
+                                      "/images/Screen_Shot_2024-02-20_at_2.28.38_PM.png"
+                                    )
+                                  }
+                                  className="relative cursor-pointer hover:brightness-110"
+                                >
                                   <Image
                                     width={674}
                                     height={248}
@@ -287,6 +314,14 @@ export default function About() {
                                   <div className="absolute top-0 left-0 w-12 h-12 border-l-4 border-t-4 border-blue-900 -ml-2 -mt-2 rounded-lg"></div>
                                   <div className="absolute bottom-0 right-0 w-12 h-12 border-r-4 border-b-4 border-blue-900 -mr-2 -mb-2 rounded-lg"></div>
                                 </div>
+                                <ImageModal
+                                  width={400}
+                                  height={200}
+                                  title="IEEE PES Logo"
+                                  isOpen={isModalOpen}
+                                  imageUrl={modalImageUrl}
+                                  onClose={closeModal}
+                                />
                               </div>
                             </article>
                           </div>
