@@ -3,7 +3,7 @@ export const projectData = [
   {
     title: "Bops Pumped Storage",
     description:
-      "A pumped storage Feasibility study in Milpitas Caliornia created by Slav Kolensikovich, Chamberlain Hinkley, Axel Rios, Jayden Matt and, Pasquale De Luca ",
+      "A pumped storage Feasibility study in Milpitas Caliornia created by Slav Kolensikovich, Chamberlain Hinkley, Axel Rios, Jayden Matt, and Pasquale De Luca ",
     tags: ["Senior Project", "Power Systems", "Smart Cities"],
     imageUrl: "/images/Bops.PNG",
   },

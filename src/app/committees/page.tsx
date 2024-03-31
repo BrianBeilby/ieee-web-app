@@ -158,7 +158,7 @@ const sections = [
         },
       },
       {
-        name: "Jayden Matt EIT",
+        name: "Jayden Matt, EIT",
         role: "Vice President",
         img: "/images/jayden.jpg",
         socials: {
@@ -194,7 +194,7 @@ const sections = [
       },
       {
         name: "Jay Mearns, PE ",
-        role: "Sr. Advisor",
+        role: "Senior Advisor",
         img: "/images/Jaymearns.jpg",
         socials: {
           linkedin: "https://www.linkedin.com/in/james-mearns-4a42299/",
@@ -204,7 +204,7 @@ const sections = [
 
             {
         name: "Chamberlain Hinkley, EIT",
-        role: "Fe Advisor",
+        role: "FE Advisor",
         img: "/images/Chamberlain Hinkley.jpg",
         socials: {
           linkedin: "https://www.linkedin.com/in/chamberlain-hinkley-eit-365240210/",

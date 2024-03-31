@@ -101,7 +101,7 @@ export default function About() {
               chapter at Sacramento State! The IEEE Electrical Engineering Club
               has been a vibrant hub for students passionate about electrical
               engineering and related topics. This chapter serves as a hub for
-              students to network study
+              students to network and study
             </p>
             <div className="flex justify-center items-center mt-8">
               <div className="[ lg:flex lg:items-center ] [ fancy-corners fancy-corners--large fancy-corners--top-left fancy-corners--bottom-right ] position: relative; transform-style: preserve-3d;">
@@ -172,9 +172,9 @@ export default function About() {
               </h2>
               <p className="">
                 Provide students with insight and knowledge about the field of
-                electrical engineering. We seek to assist our members gain
+                electrical engineering. We seek to assist our members in gaining
                 exposure to the power industry through meetings, projects and
-                other activities, as well as providing students the necessary
+                other activities, as well as providing students with the necessary
                 tools for success.
               </p>
             </motion.div>
