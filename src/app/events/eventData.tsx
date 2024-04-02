@@ -18,10 +18,4 @@ export const eventsData = [
     tags: ["Alumni", "Industry Professionals", "Networking"],
     imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
   },
-  {
-    title: "Upcoming Events",
-    description: "Participate in the Engineering and Computer Science Exposition on April 6th, showcasing projects, engaging with peers, and exploring opportunities.",
-    tags: ["Exposition", "Networking", "Project Showcase"],
-    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
-  },
 ] as const;
