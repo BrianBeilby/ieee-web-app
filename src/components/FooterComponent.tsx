@@ -29,14 +29,14 @@ export default function FooterComponent() {
                 California State University, Sacramento
               </p>
               <Footer.Copyright
-                by="Sacramento State IEEE"
+                by="IEEE at Sacramento State"
                 year={2024}
                 className="text-xs md:text-md lg:text-xl text-gray-400"
               />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 mt-6 sm:mt-4 sm:grid-cols-3 sm:gap-6">
-            <div>
+            {/* <div>
               <Footer.Title
                 title="Links"
                 className="text-sm md:text-md lg:text-lg text-white"
@@ -48,7 +48,7 @@ export default function FooterComponent() {
                 <Footer.Link href="#">Example</Footer.Link>
                 <Footer.Link href="#">Example</Footer.Link>
               </Footer.LinkGroup>
-            </div>
+            </div> */}
             <div>
               <Footer.Title
                 title="follow us"
