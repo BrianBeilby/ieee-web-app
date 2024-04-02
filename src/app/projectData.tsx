@@ -4,14 +4,11 @@ export const projectData = [
     title: "Potential Pros.",
     description:
       "Gravitational storage system designed in Grass Valley, California created by Josh Degruccio, Kenny Vo, Hoang Nguyen, Osvaldo Arias Larios, and Mohamad Ali Itani  ",
-    tags: [
-      "Renewable Energy ",
-      "Power Systems ",
-      "Energy Management",
-    ],
+    tags: ["Renewable Energy ", "Power Systems ", "Energy Management"],
     imageUrl: "/images/Mineshaft.png",
+    citation: "Image provided by Rise Gold Corp",
   },
-  
+
   {
     title: "Bops Pumped Storage",
     description:
@@ -23,13 +20,7 @@ export const projectData = [
     title: "Regenerative braking and Flywheel Energy Storage",
     description:
       "Pspice simulations to determine omtimal deployment of regenerative braking systems in Electric Vehicles. Created by Muhammad Eminic, Eyereuselam Novato, Bryce Wong and,  Desmond Lewis.  .",
-    tags: [
-      "EV Vehivles",
-      "Renewable Energy",
-      "Energy Management",
-    ],
+    tags: ["EV Vehivles", "Renewable Energy", "Energy Management"],
     imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
   },
-  
-  
-] as const;
+];
