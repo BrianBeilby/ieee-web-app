@@ -50,7 +50,7 @@ export default function Home() {
             fill="white"
           />
           <h1 className="mb-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-white">
-            Sacramento State IEEE
+            IEEE at Sacramento State
           </h1>
           <TextGenerateEffect
             className="mb-4 text-lg sm:text-xl md:text-2xl"

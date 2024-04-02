@@ -9,7 +9,7 @@ import NextTopLoader from "nextjs-toploader";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Sacramento State IEEE",
+  title: "IEEE at Sacramento State",
 };
 
 export default function RootLayout({
