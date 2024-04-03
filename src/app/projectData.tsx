@@ -5,7 +5,7 @@ export const projectData = [
     description:
       "Gravitational storage system designed in Grass Valley, California created by Josh Degruccio, Kenny Vo, Hoang Nguyen, Osvaldo Arias Larios, and Mohamad Ali Itani  ",
     tags: ["Renewable Energy ", "Power Systems ", "Energy Management"],
-    imageUrl: "/images/Mineshaft.png",
+    imageUrl: "/images/undegroundSection.png",
     citation: "Image provided by Rise Gold Corp",
   },
 
