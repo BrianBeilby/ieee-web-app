@@ -19,7 +19,7 @@ export const projectData = [
   {
     title: "Regenerative braking and Flywheel Energy Storage",
     description:
-      "Pspice simulations to determine omtimal deployment of regenerative braking systems in Electric Vehicles. Created by Muhammad Eminic, Eyereuselam Novato, Bryce Wong and,  Desmond Lewis.",
+      "Pspice simulations to determine optimal deployment of regenerative braking systems in Electric Vehicles. Created by Muhammad Eminic, Eyereuselam Novato, Bryce Wong and, Desmond Lewis.",
     tags: ["EV Vehivles", "Renewable Energy", "Energy Management"],
     imageUrl: "/images/flywheel.png",
   },
