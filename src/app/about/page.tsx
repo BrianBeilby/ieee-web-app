@@ -255,8 +255,7 @@ export default function About() {
                 <div className="ml-6">
                   <p>
                     {" "}
-                    Take a look at our lab donated by SMUD and powered by LN
-                    Soft{" "}
+                    Take a look at our lab donated by SMUD and powered by Lucas-Nuelle{" "}
                   </p>
                 </div>
               </div>

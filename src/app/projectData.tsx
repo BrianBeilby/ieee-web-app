@@ -26,7 +26,7 @@ export const projectData = [
   {
     title: "Wood Waste Pyrolyzer",
     description:
-      "Develop a standardized wood waste pyrolyzer that ensures safety and focuses on scalability to commercial levels, as well as effectiveness and efficiency. Developed by Eric Martinez",
+      "Develop a standardized wood waste pyrolyzer that ensures safety and focuses on scalability to commercial levels, as well as effectiveness and efficiency. Developed by Eric Martinez, Fernando Garibay, Sabrina Gonzales ,Jose Madrid Valenzuela",
     tags: ["Waste Management", "Renewable Energy", "Energy Management"],
     imageUrl: "/images/diagram1.png",
   },

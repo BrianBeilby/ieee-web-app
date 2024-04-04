@@ -8,9 +8,9 @@ export const eventsData = [
   },
   {
     title: "FE Exam Guidance",
-    description: "Provide comprehensive guidance on navigating the FE Exam, offering essential tools for success. Delve into the importance and advantages of power-elective courses.",
+    description: "Provide comprehensive guidance on navigating the FE Exam, offering essential tools for success.",
     tags: ["FE Exam","Power-elective Courses","Career Development"],
-    imageUrl: "/images/sample.jpeg",
+    imageUrl: "/images/ncees-logo-square.jpg",
   },
   {
     title: "Alumni Speakers",
