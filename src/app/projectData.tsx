@@ -19,8 +19,15 @@ export const projectData = [
   {
     title: "Regenerative braking and Flywheel Energy Storage",
     description:
-      "Pspice simulations to determine omtimal deployment of regenerative braking systems in Electric Vehicles. Created by Muhammad Eminic, Eyereuselam Novato, Bryce Wong and,  Desmond Lewis.  .",
+      "Pspice simulations to determine omtimal deployment of regenerative braking systems in Electric Vehicles. Created by Muhammad Eminic, Eyereuselam Novato, Bryce Wong and,  Desmond Lewis.",
     tags: ["EV Vehivles", "Renewable Energy", "Energy Management"],
-    imageUrl: "/images/wp4918510-desktop-bmw-e30-wallpapers.jpg",
+    imageUrl: "/images/flywheel.png",
+  },
+  {
+    title: "Wood Waste Pyrolyzer",
+    description:
+      "Develop a standardized wood waste pyrolyzer that ensures safety and focuses on scalability to commercial levels, as well as effectiveness and efficiency. Developed by Eric Martinez",
+    tags: ["Waste Management", "Renewable Energy", "Energy Management"],
+    imageUrl: "/images/diagram1.png",
   },
 ];
