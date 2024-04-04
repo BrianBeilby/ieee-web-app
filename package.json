@@ -16,6 +16,7 @@
     "@tsparticles/engine": "^3.3.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.3.0",
+    "@vercel/speed-insights": "^1.0.10",
     "clsx": "^2.1.0",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.2",
