@@ -247,6 +247,15 @@ const sections = [
           // Add more social links as needed
         },
       },
+      {
+        name: "Jose Madrid",
+        role: "Marketing Officer",
+        img: "/images/jose_m.jpeg",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/jose-madrid-60a6a8167/",
+          // Add more social links as needed
+        },
+      },
       // Define members similar to above
     ],
   },
