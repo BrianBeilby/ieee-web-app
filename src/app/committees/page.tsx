@@ -250,7 +250,7 @@ const sections = [
       {
         name: "Jose Madrid",
         role: "Marketing Officer",
-        img: "/images/jose_m.jpeg",
+        img: "/images/josem.jpeg",
         socials: {
           linkedin: "https://www.linkedin.com/in/jose-madrid-60a6a8167/",
           // Add more social links as needed
@@ -288,4 +288,4 @@ const sections = [
     ],
   },
   // Add more sections as needed
-];
+] as const;

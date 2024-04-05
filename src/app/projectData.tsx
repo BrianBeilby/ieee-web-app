@@ -8,7 +8,6 @@ export const projectData = [
     imageUrl: "/images/undegroundSection.png",
     citation: "Image provided by Rise Gold Corp",
   },
-
   {
     title: "Bops Pumped Storage",
     description:
@@ -26,8 +25,8 @@ export const projectData = [
   {
     title: "Wood Waste Pyrolyzer",
     description:
-      "Develop a standardized wood waste pyrolyzer that ensures safety and focuses on scalability to commercial levels, as well as effectiveness and efficiency. Developed by Eric Martinez, Fernando Garibay, Sabrina Gonzales ,Jose Madrid Valenzuela",
-    tags: ["Waste Management", "Renewable Energy", "Energy Management"],
+      "A standardized wood waste pyrolyzer that ensures safety and focuses on scalability to commercial levels, as well as effectiveness and efficiency. Developed by Eric Martinez, Fernando Garibay, Sabrina Gonzalez, Jose Madrid, and Winston Lin.",
+    tags: ["Waste Management", "Renewable Energy"],
     imageUrl: "/images/diagram1.png",
   },
 ];
