@@ -8,7 +8,6 @@ export const projectData = [
     imageUrl: "/images/undegroundSection.png",
     citation: "Image provided by Rise Gold Corp",
   },
-
   {
     title: "Bops Pumped Storage",
     description:
@@ -30,4 +29,4 @@ export const projectData = [
     tags: ["Waste Management", "Renewable Energy"],
     imageUrl: "/images/diagram1.png",
   },
-] as const;
+];

@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import FooterComponent from "@/components/FooterComponent";
 import { ThemeModeScript } from "flowbite-react";
 import NextTopLoader from "nextjs-toploader";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+//import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <SpeedInsights />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <html lang="en">
         <head>
