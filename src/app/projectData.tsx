@@ -27,6 +27,7 @@ export const projectData = [
     description:
       "A standardized wood waste pyrolyzer that ensures safety and focuses on scalability to commercial levels, as well as effectiveness and efficiency. Developed by Eric Martinez, Fernando Garibay, Sabrina Gonzalez, Jose Madrid, and Winston Lin.",
     tags: ["Waste Management", "Renewable Energy"],
-    imageUrl: "/images/diagram1.png",
+    imageUrl: "/images/pyrolyzer.png",
+    citation: "Image provided by AdvancedOrganicMethods",
   },
 ];
