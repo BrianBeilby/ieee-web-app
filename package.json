@@ -22,7 +22,7 @@
     "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.8",
     "loaders.css": "^0.1.2",
-    "next": "14.1.0",
+    "next": "^14.1.4",
     "nextjs-toploader": "^1.6.11",
     "nodemailer": "^6.9.11",
     "react": "^18",

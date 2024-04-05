@@ -288,4 +288,4 @@ const sections = [
     ],
   },
   // Add more sections as needed
-];
+] as const;
