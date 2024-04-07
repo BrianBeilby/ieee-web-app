@@ -25,7 +25,7 @@ export default function OutlinedCard() {
       // Generate a random index within the range of wordData length
       const newIndex = Math.floor(Math.random() * wordData.length);
       setWordIndex(newIndex);
-    }, 10 * 1000); // Update every 30 seconds
+    }, 60 * 60 * 1000); // Update Variable, (update every hour) (1 hours 60 minutes * 60 seconds * 1000 milliseconds) = 1 hour.
 
     // Clear interval on component unmount
     return () => clearInterval(intervalId);
