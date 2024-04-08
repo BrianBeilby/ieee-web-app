@@ -13,13 +13,6 @@ const scrollToElement = () => {
   const viewportHeight = window.innerHeight;
   let scrollPercentage = 0.7; // Default scroll percentage
 
-  /*
-  if (viewportHeight <= 600) {
-    scrollPercentage = 0.6; // Lower scroll percentage for smaller viewports
-  } else if (viewportHeight >= 1000) {
-    scrollPercentage = 0.9; // Higher scroll percentage for larger viewports
-  }
-  */
   const targetPosition = viewportHeight * scrollPercentage;
 
   window.scrollTo({
