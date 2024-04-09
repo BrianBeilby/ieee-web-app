@@ -1,9 +1,10 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import React from 'react';
 
 
 const bull = (
@@ -17,21 +18,20 @@ const bull = (
 
 
 export default function OutlinedCard() {
-  const [wordIndex, setWordIndex] = React.useState(0); // State to store the index of the current word
+  const [currentWord, setCurrentWord] = useState<{
+    word: JSX.Element;
+    definition: string;
+    partOfSpeech: string;
+    example: string;
+    clean_word: string;
+  } | null>(null);
 
-  // Function to update the word index daily
-  React.useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Generate a random index within the range of wordData length
-      const newIndex = Math.floor(Math.random() * wordData.length);
-      setWordIndex(newIndex);
-    }, 60 * 60 * 1000); // Update Variable, (update every hour) (1 hours 60 minutes * 60 seconds * 1000 milliseconds) = 1 hour.
-
-    // Clear interval on component unmount
-    return () => clearInterval(intervalId);
-  }, []);
-
-  const currentWord = wordData[wordIndex];
+  useEffect(() => {
+    const currentHour = new Date().getHours();
+    // Use the current hour to select a word from the array
+    const index = currentHour % wordData.length;
+    setCurrentWord(wordData[index]);
+  }, []); // This effect runs once on component mount
 
   const cardStyle = {
     backgroundColor: 'black',
@@ -43,25 +43,27 @@ export default function OutlinedCard() {
 
   return (
     <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined" sx={cardStyle}>
-        <CardContent>
-          <Typography sx={{ fontSize: 14 }} color="white" gutterBottom>
-            Word of the Day
-          </Typography>
-          <Typography variant="h5" component="div" sx={{ color: 'white' }}>
-            {currentWord.word}
-          </Typography>
-          <Typography sx={{ mb: 1.5, color: 'white' }}>
-            {currentWord.partOfSpeech}
-          </Typography>
-          <Typography variant="body2" sx={{ color: 'white', wordWrap: 'break-word' }}>
-            {currentWord.definition}
-            <br /> 
-            {currentWord.example}
-          </Typography>
-        </CardContent>
-        <Button size="small" onClick={handleLearnMore}>Learn More</Button>
-      </Card>
+      {currentWord && (
+        <Card variant="outlined" sx={cardStyle}>
+          <CardContent>
+            <Typography sx={{ fontSize: 14 }} color="white" gutterBottom>
+              Word of the Day
+            </Typography>
+            <Typography variant="h5" component="div" sx={{ color: 'white' }}>
+              {currentWord.word}
+            </Typography>
+            <Typography sx={{ mb: 1.5, color: 'white' }}>
+              {currentWord.partOfSpeech}
+            </Typography>
+            <Typography variant="body2" sx={{ color: 'white', wordWrap: 'break-word' }}>
+              {currentWord.definition}
+              <br /> 
+              {currentWord.example}
+            </Typography>
+          </CardContent>
+          <Button size="small" onClick={handleLearnMore}>Learn More</Button>
+        </Card>
+      )}
     </Box>
   );
 }
