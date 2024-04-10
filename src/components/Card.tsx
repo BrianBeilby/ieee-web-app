@@ -38,6 +38,7 @@ export default function OutlinedCard() {
     width: '467px', // Set a fixed width for the card
   };
   const handleLearnMore = () => {
+    if (!currentWord) return;
     window.open(`https://www.google.com/search?q=${currentWord.clean_word}`, '_blank');
   };
 
