@@ -8,6 +8,8 @@ import { eventsData } from "@/app/events/eventData";
 import React from "react";
 import Event from "./event";
 import type { CustomFlowbiteTheme } from "flowbite-react";
+import Alert from '@mui/material/Alert';
+
 
 const customTheme: CustomFlowbiteTheme["button"] = {
   outline: {
@@ -34,6 +36,8 @@ export default function Events() {
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white">
         Upcoming Events
       </h1>
+      <Alert severity="info" className="mb-4" > Next Event Coming up on April 19th </Alert>
+
       <div className="flex flex-col items-center">
         <div className="w-full max-w-6xl mx-auto">
           <iframe

@@ -5,6 +5,8 @@ import { eventsData } from "@/app/events/eventData";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+
+
 type EventProps = (typeof eventsData)[number];
 
 export default function Event({
@@ -21,7 +23,7 @@ export default function Event({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  return (
+  return (    
     <motion.div
       ref={ref}
       style={{
