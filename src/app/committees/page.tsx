@@ -144,7 +144,7 @@ const sections = [
         role: "President",
         img: "/images/pasquale.jpg",
         socials: {
-          linkedin: "https://www.linkedin.com/in/pasquale-de-luca-ab5355256/",
+          linkedin: "https://www.linkedin.com/in/pasquale-de-luca-eit-ab5355256/",
           // Add more social links as needed
         },
       },
@@ -162,7 +162,7 @@ const sections = [
         role: "Vice President",
         img: "/images/jayden.jpg",
         socials: {
-          linkedin: "https://www.linkedin.com/in/jayden-matt-b6b032265/",
+          linkedin: "https://www.linkedin.com/in/jayden-matt-eit-b6b032265/",
           // Add more social links as needed
         },
       },
