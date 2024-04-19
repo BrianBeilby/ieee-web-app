@@ -36,7 +36,7 @@ export default function Events() {
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white">
         Upcoming Events
       </h1>
-      <Alert severity="info" className="mb-4 max-w-full lg:max-w-3xl translate-x-1/4 lg:translate-x-1/2 sm:max-w-full">
+      <Alert severity="info" className="mb-4 w-full max-w-6xl mx-auto rounded-lg shadow-lg">
         Next Event Coming up on April 19th 
       </Alert>
 
