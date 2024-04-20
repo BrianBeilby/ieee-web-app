@@ -37,7 +37,7 @@ export default function Events() {
         Upcoming Events
       </h1>
       <Alert severity="info" className="mb-4 w-full max-w-6xl mx-auto rounded-lg shadow-lg">
-        Next Event Coming up on April 19th 
+        Next Event is TBD, Subscribe to never miss an event
       </Alert>
 
       <div className="flex flex-col items-center">
