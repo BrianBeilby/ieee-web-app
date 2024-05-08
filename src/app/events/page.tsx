@@ -37,7 +37,7 @@ export default function Events() {
         Upcoming Events
       </h1>
       <Alert severity="info" className="mb-4 w-full max-w-6xl mx-auto rounded-lg shadow-lg">
-        Next Event is TBD, Subscribe to never miss an event
+        Next Event is Thursday, May 9th at River Side 1015. Subscribe to never miss an event.
       </Alert>
 
       <div className="flex flex-col items-center">
