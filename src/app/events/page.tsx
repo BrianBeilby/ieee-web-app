@@ -30,14 +30,14 @@ export default function Events() {
       setCopySuccess(false);
     }, 2000); // Show copied status for 2 seconds
   };
-
+  //Next Event is Thursday, May 9th at River Side 1015. Subscribe to never miss an event.
   return (
     <div className="container mx-auto px-4 py-28">
       <h1 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white">
         Upcoming Events
       </h1>
       <Alert severity="info" className="mb-4 w-full max-w-6xl mx-auto rounded-lg shadow-lg">
-        Next Event is Thursday, May 9th at River Side 1015. Subscribe to never miss an event.
+        No Events coming soon. Check back in the fall, and Have a nice summer!!😀☀
       </Alert>
 
       <div className="flex flex-col items-center">
