@@ -4,7 +4,7 @@ export const eventsData = [
     title: "Fundraising and Team Establishment",
     description: "Form a dedicated team to efficiently coordinate fundraising events and brainstorm innovative projects for IEEE PES.",
     tags: ["Fundraising", "Project Coordination", "IEEE PES"],
-    imageUrl: "/images/sample.jpeg",
+    imageUrl: "/images/fund_team_estab.jpg",
   },
   {
     title: "FE Exam Guidance",
