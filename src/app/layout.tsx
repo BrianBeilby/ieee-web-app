@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "IEEE at Sacramento State",
+  description: "The IEEE Electrical Engineering Club has been a vibrant hub for students passionate about electrical engineering and related topics. This chapter serves as a hub for students to network and study."
 };
 
 export default function RootLayout({
