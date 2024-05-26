@@ -9,9 +9,6 @@ SacStateIEEE is a Next.js & TailwindCSS web application, hosted on Vercel, that 
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
