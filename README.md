@@ -55,3 +55,7 @@ To start the development server:
 npm run dev
 ```
 Open your browser and navigate to http://localhost:3000 to see the application in action.
+
+## Contributing
+
+Contributions are welcome! If you have any ideas for improvements or new features, feel free to open an issue or submit a pull request.
