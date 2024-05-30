@@ -1,4 +1,4 @@
-# SacStateIEEE
+# SacStateIEE
 
 SacStateIEEE is a Next.js & TailwindCSS web application, hosted on Vercel, that offers a user-friendly platform to display information about the IEEE club at Sac State!
 
