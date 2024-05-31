@@ -37,7 +37,7 @@ export default function Events() {
         Upcoming Events
       </h1>
       <Alert severity="info" className="mb-4 w-full max-w-6xl mx-auto rounded-lg shadow-lg">
-        No Events coming soon. Check back in the fall, and Have a nice summer!!😀☀
+        Good Job with Finals Have a Great Summer! Check back in the fall to see the upcoming events!!😀
       </Alert>
 
       <div className="flex flex-col items-center">
